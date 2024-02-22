@@ -18,7 +18,7 @@ export default function Banner() {
         <div>Nav</div>
       </div>
 
-      <div className={`relative flex flex-col md:rounded-bl-3xl md:w-5/12`}>
+      <div className={`relative flex flex-col md:rounded-bl-3xl md:w-5/12 `}>
         {/* Bg on += md screens */}
         <div className="hidden md:block md:absolute md:bottom-0 md:left-0 md:-z-10 md:w-screen md:h-screen md:overflow-hidden">
           <div className="hidden md:block md:absolute md:bottom-0 md:right-0 md:w-full md:h-full md:bg-[#00cc99] md:rounded-3xl " />

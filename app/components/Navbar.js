@@ -34,7 +34,7 @@ export default function Navbar() {
 
   return (
     <div className="bg-gray-200 ">
-      <nav className="max-w-screen-2xl mx-auto flex justify-between items-center my-3 md:my-6 lg:my-6 flex-wrap w-full px-5 sm:px-8 md:px-10">
+      <nav className="max-w-screen-2xl mx-auto flex justify-between items-center my-6  flex-wrap w-full px-5 sm:px-8 md:px-10">
         <div
           className={`flex gap-7 lg:gap-10 text-sm lg:text-base ${
             menuSet ? "mx-0" : "mx-auto md:mx-0"
