@@ -35,7 +35,11 @@ export default function Navbar() {
   return (
     <div>
       <nav className="max-w-screen-2xl mx-auto flex justify-between items-center mt-4 sm:mt-8 flex-wrap w-full">
-        <div className="flex gap-7 md:gap-10 lg:gap-14 text-sm lg:text-base mx-auto md:mx-0">
+        <div
+          className={`flex gap-7 md:gap-10 lg:gap-14 text-sm lg:text-base ${
+            menuSet ? "mx-0" : "mx-auto md:mx-0"
+          }`}
+        >
           <Link href="/" className="w-[120px] lg:w-auto ">
             <Image
               src={Logo}
