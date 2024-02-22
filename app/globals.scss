@@ -21,3 +21,7 @@ footer{
       @apply px-5 sm:px-8 md:px-10   ;
 
 }
+
+li{
+    @apply hover:opacity-50;
+}

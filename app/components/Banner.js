@@ -36,7 +36,7 @@ export default function Banner() {
               alt="Jobnow logo"
               width={45}
               loading="eager"
-              className="hover:opacity-75 bg-white rounded-lg p-2 transform -rotate-6"
+              className=" bg-white rounded-lg p-2 transform -rotate-6"
             />
           </div>
           <div className="ml-[80%] mb-10  md:mb-10">
@@ -45,7 +45,7 @@ export default function Banner() {
               alt="Jobnow logo"
               width={45}
               loading="eager"
-              className="hover:opacity-75 bg-white rounded-lg p-2 transform rotate-12"
+              className=" bg-white rounded-lg p-2 transform rotate-12"
             />
           </div>
           <div className="ml-[25%] mb-10 md:mb-0 ">
@@ -54,7 +54,7 @@ export default function Banner() {
               alt="Jobnow logo"
               width={45}
               loading="eager"
-              className="hover:opacity-75 bg-white rounded-lg p-2 transform -rotate-6"
+              className=" bg-white rounded-lg p-2 transform -rotate-6"
             />
           </div>
         </div>

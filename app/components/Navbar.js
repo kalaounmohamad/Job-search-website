@@ -53,7 +53,7 @@ export default function Navbar() {
           <div
             className={`${
               menuSet
-                ? " absolute bg-white md:relative top-0 left-0 pl-5 sm:pl-8  z-10 pt-5 sm:pt-9  h-screen"
+                ? " absolute bg-white md:relative top-0 left-0 px-5 z-10 pt-5  text-lg h-screen"
                 : "hidden"
             } w-full md:flex md:items-center md:w-auto`}
           >
@@ -110,7 +110,7 @@ export default function Navbar() {
                 <Link
                   href="/signin"
                   onClick={closeMenu}
-                  className={`block font-bold text-white   ${
+                  className={`block font-bold    ${
                     pathname === "/projects" ? "underline" : ""
                   }`}
                 >
@@ -121,15 +121,15 @@ export default function Navbar() {
                 <Link
                   href="/createaccount"
                   onClick={closeMenu}
-                  className={`font-bold text-black flex gap-2 items-center ${
+                  className={`font-bold text-black flex  gap-2 items-center ${
                     pathname === "/createaccount" ? "underline" : ""
                   }`}
                 >
-                  <span className="flex gap-2 bg-white px-3 py-2 rounded-xl">
+                  <span className="flex flex-wrap gap-2 bg-[#00cc99] px-3 py-2 rounded-xl">
                     <img
                       src="/assets/sign_up.svg"
                       alt="Sign up SVG"
-                      className="transform -rotate-90"
+                      className="transform  w-6 -rotate-90"
                     />
                     Create Account
                   </span>
@@ -139,10 +139,11 @@ export default function Navbar() {
           </div>
         </div>
         <div className="hidden md:flex items-center gap-6 lg:gap-12 text-sm lg:text-base">
+          {/* Large screen */}
           <Link
             href="/signin"
             onClick={closeMenu}
-            className={`block font-bold text-white   ${
+            className={`block font-bold text-white hover:opacity-50  ${
               pathname === "/projects" ? "underline" : ""
             }`}
           >
@@ -151,32 +152,34 @@ export default function Navbar() {
           <Link
             href="/createaccount"
             onClick={closeMenu}
-            className={` font-bold text-black flex gap-2 bg-white px-3 py-2 rounded-xl  ${
+            className={` font-bold text-black  bg-white px-3 py-2 rounded-xl ${
               pathname === "/projects" ? "underline" : ""
             }`}
           >
-            <img
-              src="/assets/sign_up.svg"
-              alt="Sign up SVG"
-              className="transform w-6 -rotate-90"
-            />
-            Create Account
+            <div className="flex gap-2 hover:opacity-50">
+              <img
+                src="/assets/sign_up.svg"
+                alt="Sign up SVG"
+                className="transform w-6 -rotate-90 "
+              />
+              Create Account
+            </div>
           </Link>
         </div>
       </nav>
       {menuSet ? (
         <button
-          className="md:hidden absolute top-3 sm:top-7 right-5 text-black cursor-pointer  z-20  text-3xl p-0 font-bold"
+          className="md:hidden absolute top-5 right-5 text-black cursor-pointer  z-20  text-3xl p-0 font-bold"
           onClick={toggleMenu}
         >
           ✕
         </button>
       ) : (
         <button
-          className="md:hidden absolute top-3 right-5 sm:right-8 text-black cursor-pointer text-3xl p-0 font-bold"
+          className="md:hidden absolute top-5 right-5 cursor-pointer font-bold flex gap-2 bg-[#00cc99] px-3 py-2 rounded-md"
           onClick={toggleMenu}
         >
-          ☰
+          <img src="/assets/menu.svg" alt="Menu SVG" className="w-6 " />
         </button>
       )}
     </div>
