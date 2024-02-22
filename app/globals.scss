@@ -25,3 +25,14 @@ footer{
 li{
     @apply hover:opacity-50;
 }
+
+@layer utilities {
+    .placeholder-black::placeholder {
+      color: black;
+    }
+  
+    .placeholder-bold::placeholder {
+      font-weight: bold;
+    }
+  }
+  

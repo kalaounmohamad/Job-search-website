@@ -33,7 +33,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className="bg-gray-200 ">
+    <div>
       <nav className="max-w-screen-2xl mx-auto flex justify-between items-center my-6  flex-wrap w-full px-5 sm:px-8 md:px-10">
         <div
           className={`flex gap-7 lg:gap-10 text-sm lg:text-base ${
@@ -59,7 +59,7 @@ export default function Navbar() {
           >
             <ul
               className="md:flex  
-             md:justify-between gap-6 lg:gap-12 space-y-4 md:space-y-0"
+             md:justify-between gap-6 lg:gap-10 space-y-4 md:space-y-0"
             >
               <li>
                 <Link
