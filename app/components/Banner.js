@@ -19,8 +19,14 @@ export default function Banner() {
       </div>
 
       <div className={`relative flex flex-col md:rounded-bl-3xl md:w-5/12`}>
-        <div className="absolute bottom-0 left-0 -z-10 w-screen h-screen overflow-hidden">
-          <div className="absolute bottom-0 right-0 w-full h-full bg-green-200 rounded-3xl " />
+        {/* Bg on += md screens */}
+        <div className="hidden md:block md:absolute md:bottom-0 md:left-0 md:-z-10 md:w-screen md:h-screen md:overflow-hidden">
+          <div className="hidden md:block md:absolute md:bottom-0 md:right-0 md:w-full md:h-full md:bg-[#00cc99] md:rounded-3xl " />
+        </div>
+        {/* Bg on <md screens */}
+
+        <div className="md:hidden absolute bottom-0 top-0 -left-5 sm:-left-8 -z-10 w-screen  overflow-hidden">
+          <div className="md:hidden absolute bottom-0 top-0 w-full h-full bg-[#00cc99]  " />
         </div>
 
         <div className="md:mb-10">

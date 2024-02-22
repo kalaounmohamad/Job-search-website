@@ -33,8 +33,8 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div>
-      <nav className="max-w-screen-2xl mx-auto flex justify-between items-center mt-4 md:mt-7 lg:mt-10 flex-wrap w-full">
+    <div className="bg-gray-200 ">
+      <nav className="max-w-screen-2xl mx-auto flex justify-between items-center my-3 md:my-6 lg:my-6 flex-wrap w-full px-5 sm:px-8 md:px-10">
         <div
           className={`flex gap-7 lg:gap-10 text-sm lg:text-base ${
             menuSet ? "mx-0" : "mx-auto md:mx-0"
@@ -110,7 +110,7 @@ export default function Navbar() {
                 <Link
                   href="/signin"
                   onClick={closeMenu}
-                  className={`block font-bold   ${
+                  className={`block font-bold text-white   ${
                     pathname === "/projects" ? "underline" : ""
                   }`}
                 >
@@ -125,7 +125,7 @@ export default function Navbar() {
                     pathname === "/createaccount" ? "underline" : ""
                   }`}
                 >
-                  <span className="flex gap-2 bg-gray-600 px-3 py-2 rounded-xl">
+                  <span className="flex gap-2 bg-white px-3 py-2 rounded-xl">
                     <img
                       src="/assets/sign_up.svg"
                       alt="Sign up SVG"
@@ -142,7 +142,7 @@ export default function Navbar() {
           <Link
             href="/signin"
             onClick={closeMenu}
-            className={`block font-bold   ${
+            className={`block font-bold text-white   ${
               pathname === "/projects" ? "underline" : ""
             }`}
           >
@@ -151,7 +151,7 @@ export default function Navbar() {
           <Link
             href="/createaccount"
             onClick={closeMenu}
-            className={` font-bold text-black flex gap-2 bg-gray-600 px-3 py-2 rounded-xl  ${
+            className={` font-bold text-black flex gap-2 bg-white px-3 py-2 rounded-xl  ${
               pathname === "/projects" ? "underline" : ""
             }`}
           >
