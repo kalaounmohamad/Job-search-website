@@ -19,7 +19,7 @@ export default function Banner() {
         <SearchBar />
         {/* Bg on <md screens */}
 
-        <div className="md:hidden absolute -bottom-11 -top-[52px] -left-5 sm:-left-8 -z-10 w-screen  overflow-hidden">
+        <div className="md:hidden absolute -bottom-11 -top-[44px] sm:-top-[52px] -left-5 sm:-left-8 -z-10 w-screen  overflow-hidden">
           <div className="md:hidden absolute w-full h-full bg-gray-100  " />
         </div>
         <div className="md:hidden absolute -bottom-11 -top-[127px] -left-5 sm:-left-8 -z-20 w-screen  overflow-hidden">
