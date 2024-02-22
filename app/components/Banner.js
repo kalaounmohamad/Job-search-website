@@ -15,9 +15,9 @@ export default function Banner() {
         height: bannerHeight,
       }}
     >
-      <div className=" md:w-7/12 flex flex-col justify-center gap-5 px-8 md:px-10 lg:px-16 xl:px-20 ">
+      <div className=" md:w-7/12 flex flex-col items-center md:items-start justify-center gap-5 px-8 md:px-10 lg:px-16 xl:px-20 mb-20 md:mb-0 ">
         <h1 className="font-extrabold text-3xl">Search, Find, & Apply</h1>
-        <p>
+        <p className=" w-[90%]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
           consectetur ratione iste harum reprehenderit dicta recusandae eveniet
           laudantium culpa assumenda cumque minima at accusamus ipsa doloremque
