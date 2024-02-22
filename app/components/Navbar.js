@@ -34,9 +34,9 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav className="max-w-screen-2xl mx-auto flex justify-between items-center mt-4 sm:mt-8 flex-wrap w-full">
+      <nav className="max-w-screen-2xl mx-auto flex justify-between items-center mt-4 md:mt-7 lg:mt-10 flex-wrap w-full">
         <div
-          className={`flex gap-7 md:gap-10 lg:gap-14 text-sm lg:text-base ${
+          className={`flex gap-7 lg:gap-10 text-sm lg:text-base ${
             menuSet ? "mx-0" : "mx-auto md:mx-0"
           }`}
         >
@@ -55,7 +55,7 @@ export default function Navbar() {
               menuSet
                 ? " absolute bg-white md:relative top-0 z-10 pt-5 sm:pt-9  h-screen"
                 : "hidden"
-            } w-full  px-4 lg:px-0 -ml-4 md:ml-0  md:flex md:items-center md:w-auto`}
+            } w-full  px-4 md:px-0 -ml-4 md:ml-0  md:flex md:items-center md:w-auto`}
           >
             <ul
               className="md:flex  
@@ -114,7 +114,7 @@ export default function Navbar() {
                     pathname === "/projects" ? "underline" : ""
                   }`}
                 >
-                  Sign in
+                  Sign In
                 </Link>
               </li>
               <li className="md:hidden">
@@ -158,7 +158,7 @@ export default function Navbar() {
             <img
               src="/assets/sign_up.svg"
               alt="Sign up SVG"
-              className="transform -rotate-90"
+              className="transform w-6 -rotate-90"
             />
             Create Account
           </Link>
@@ -173,7 +173,7 @@ export default function Navbar() {
         </button>
       ) : (
         <button
-          className="md:hidden absolute top-3 sm:top-7 right-5 text-black cursor-pointer text-3xl p-0 font-bold"
+          className="md:hidden absolute top-3 right-5 sm:right-8 text-black cursor-pointer text-3xl p-0 font-bold"
           onClick={toggleMenu}
         >
           ☰
