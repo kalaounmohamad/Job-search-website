@@ -18,9 +18,7 @@ export default function Banner() {
         <div>Nav</div>
       </div>
 
-      <div
-        className={`relative flex flex-col md:rounded-bl-3xl md:w-5/12 z-10`}
-      >
+      <div className={`relative flex flex-col md:rounded-bl-3xl md:w-5/12`}>
         <div className="absolute bottom-0 left-0 -z-10 w-screen h-screen overflow-hidden">
           <div className="absolute bottom-0 right-0 w-full h-full bg-green-200 rounded-3xl " />
         </div>
