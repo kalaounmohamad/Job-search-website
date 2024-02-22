@@ -6,10 +6,10 @@ import Signal from "../img/Banner/signal.svg";
 
 export default function Banner() {
   return (
-    <main className="flex flex-col md:flex-row mx-auto">
-      <div className=" md:w-7/12 flex flex-col items-center md:items-start justify-center gap-5  my-20 md:my-0 ">
+    <main className=" flex flex-col md:flex-row mx-auto">
+      <div className="md:w-7/12 flex flex-col items-center md:items-start justify-center gap-5  my-20 md:my-0">
         <h1 className="font-extrabold text-3xl">Search, Find, & Apply</h1>
-        <p className=" w-[90%]">
+        <p className="w-[90%]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
           consectetur ratione iste harum reprehenderit dicta recusandae eveniet
           laudantium culpa assumenda cumque minima at accusamus ipsa doloremque
@@ -17,7 +17,14 @@ export default function Banner() {
         </p>
         <div>Nav</div>
       </div>
-      <div className={`flex flex-col  md:rounded-bl-3xl md:w-5/12 `}>
+
+      <div
+        className={`relative flex flex-col md:rounded-bl-3xl md:w-5/12 z-10`}
+      >
+        <div className="absolute bottom-0 left-0 -z-10 w-screen h-screen overflow-hidden">
+          <div className="absolute bottom-0 right-0 w-full h-full bg-green-200 rounded-3xl " />
+        </div>
+
         <div className="md:mb-10">
           <div className="ml-[15%] my-10  md:my-20">
             <Image
