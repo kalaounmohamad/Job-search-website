@@ -6,11 +6,11 @@
 body {
 //   background: #f4ebfa;
 //   @apply text-gray-500 mx-4 sm:mx-8 ;
-  @apply mx-5 sm:mx-8 md:mx-10 overflow-hidden  ;
+  @apply mx-5 sm:mx-8 md:mx-10   ;
 }
 
 main {
-    @apply max-w-screen-2xl   sm:mt-8 mt-6 mb-6 mx-auto;
+    @apply max-w-screen-2xl sm:mt-8 mt-6 mb-6 mx-auto;
   }
 
 h1 {
