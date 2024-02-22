@@ -1,3 +1,8 @@
+import Banner from "./components/Banner";
 export default function Home() {
-  return <main> Dashboard </main>;
+  return (
+    <main>
+      <Banner />
+    </main>
+  );
 }

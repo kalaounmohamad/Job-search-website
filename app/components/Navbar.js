@@ -53,9 +53,9 @@ export default function Navbar() {
           <div
             className={`${
               menuSet
-                ? " absolute bg-white md:relative top-0 z-10 pt-5 sm:pt-9  h-screen"
+                ? " absolute bg-white md:relative top-0 left-0 pl-5 sm:pl-8  z-10 pt-5 sm:pt-9  h-screen"
                 : "hidden"
-            } w-full  px-6 md:px-0 -ml-8 md:ml-0  md:flex md:items-center md:w-auto`}
+            } w-full md:flex md:items-center md:w-auto`}
           >
             <ul
               className="md:flex  
