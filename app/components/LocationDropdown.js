@@ -4,7 +4,7 @@ export default function LocationDropdown() {
   const locations = ["Location", "Location 1", "Location 2", "Location 3"]; // Example locations
 
   return (
-    <div className="relative bg-gray-100 rounded-lg cursor-pointer hover:outline-[#00cc99] focus:outline-[#00cc99]">
+    <div className="relative bg-gray-100 rounded-lg cursor-pointer hover:outline-[#00cc99] focus:outline-[#00cc99] text-sm flex items-center">
       {/* location SVG Icon */}
       <img
         src="/assets/location.svg"
@@ -13,7 +13,7 @@ export default function LocationDropdown() {
       />
 
       {/* Select */}
-      <select className="bg-gray-100 pl-10 pr-8 py-2 rounded-lg cursor-pointer focus:outline-[#00cc99] appearance-none">
+      <select className="bg-gray-100 pl-10 pr-8 py-2 rounded-lg cursor-pointer focus:outline-[#00cc99] appearance-none ">
         {locations.map((location, index) => (
           <option key={index}>{location}</option>
         ))}

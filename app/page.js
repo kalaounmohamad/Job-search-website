@@ -1,14 +1,18 @@
-import Banner from "./components/Banner";
-import Navbar from "./components/Navbar";
+import HowItWorks from "./components/HowItWorksSection/HowItWorks";
+import JobCategories from "./components/JobCategories/JobCategories";
+import WholeBanner from "./components/WholeBanner";
+
 export default function Home() {
   return (
-    <div className="relative">
-      {/* Bg on += md screens */}
-      <div className="hidden md:block md:absolute md:bottom-0 md:left-0 md:-z-10 md:w-screen md:h-screen md:overflow-hidden">
-        <div className="hidden md:block md:absolute md:bottom-0 md:left-0 md:w-full md:h-full md:bg-gray-200  " />
+    <>
+      <WholeBanner />
+      <div className="px-8 md:px-20 pt-20 bg-gray-100">
+        <HowItWorks />
       </div>
-
-      <Banner />
-    </div>
+      <div className="px-8 md:px-20 pt-20 bg-gray-200">
+        <JobCategories />
+      </div>
+      <div className="mx-8 md:mx-20">home</div>
+    </>
   );
 }
