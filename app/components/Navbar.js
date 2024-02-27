@@ -34,9 +34,9 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav className="max-w-screen-2xl mx-auto flex justify-between items-center my-6 md:mt-10 flex-wrap w-full px-5 sm:px-8 md:px-20">
+      <nav className="max-w-screen-2xl mx-auto flex justify-between items-center my-6 md:mt-14 flex-wrap w-full px-5 sm:px-8 md:px-20">
         <div
-          className={`flex gap-8 lg:gap-20 text-sm  ${
+          className={`flex gap-8 lg:gap-16 text-base  ${
             menuSet ? "mx-0" : "mx-auto md:mx-0"
           }`}
         >
@@ -138,7 +138,7 @@ export default function Navbar() {
             </ul>
           </div>
         </div>
-        <div className="hidden md:flex items-center gap-4 lg:gap-8 text-sm">
+        <div className="hidden md:flex items-center gap-4 lg:gap-8 text-base">
           {/* Large screen */}
           <Link
             href="/signin"
