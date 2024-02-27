@@ -1,14 +1,10 @@
 import React from "react";
-import Image from "next/image";
-import Shield from "../img/Banner/shield.svg";
-import Calendar from "../img/Banner/calendar.svg";
-import Signal from "../img/Banner/signal.svg";
 import SearchBar from "./SearchBar";
 
 export default function Banner() {
   return (
     <main className=" flex flex-col md:flex-row mx-auto ">
-      <div className="relative md:w-[60%] flex flex-col items-center md:items-start justify-center gap-10  mt-5 mb-11 md:my-0 md:pl-10 md:pr-20 md:py-10">
+      <div className="relative md:w-[60%] flex flex-col items-center md:items-start justify-center gap-10  mt-5 mb-11 md:mt-0 md:mb-20 md:pl-10 md:pr-20 md:py-10">
         <h1 className="text-5xl font-black ">Search, Find, & Apply</h1>
         <p className="w-[90%] mb-5 font-semibold">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
@@ -36,33 +32,69 @@ export default function Banner() {
           <div className="md:hidden absolute bottom-0 top-0 w-full h-full bg-primary  " />
         </div>
 
-        <div className="pt-10 md:pb-10 md:pt-0 md:my-auto">
+        <div className="py-10 md:pt-0 md:my-auto">
           <div className="ml-[20%] mb-10">
-            <Image
-              src={Calendar}
-              alt="Jobnow logo"
-              width={55}
-              loading="eager"
-              className=" bg-white rounded-lg p-3 transform -rotate-6"
-            />
+            <div className="bg-white h-16 w-16 rounded-lg p-3 transform -rotate-6">
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-full w-full"
+                style={{ color: "#00cc99", verticalAlign: "middle" }}
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M21 12V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14c0 1.1.9 2 2 2h7.5"></path>
+                <path d="M16 2v4"></path>
+                <path d="M8 2v4"></path>
+                <path d="M3 10h18"></path>
+                <path d="M18 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6v0Z"></path>
+                <path d="m22 22-1.5-1.5"></path>
+              </svg>
+            </div>
           </div>
-          <div className="ml-[75%] mb-10 ">
-            <Image
-              src={Signal}
-              alt="Jobnow logo"
-              width={55}
-              loading="eager"
-              className=" bg-white rounded-lg p-3 transform rotate-6"
-            />
+          <div className="ml-[75%] mb-10">
+            <div className="bg-white h-16 w-16 rounded-lg p-3 transform rotate-6">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                class="h-full w-full rounded-lg p-1.5"
+                style={{
+                  color: "#fff",
+                  verticalAlign: "middle",
+                  backgroundColor: "00cc99",
+                }}
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2z"></path>
+              </svg>
+            </div>
           </div>
-          <div className="ml-[15%] mb-10  ">
-            <Image
-              src={Shield}
-              alt="Jobnow logo"
-              width={55}
-              loading="eager"
-              className=" bg-white rounded-lg p-3 transform -rotate-6"
-            />
+          <div className="ml-[15%]">
+            <div className="bg-white h-16 w-16 rounded-lg p-3 transform -rotate-6">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                class="h-full w-full"
+                style={{ color: "#00cc99", verticalAlign: "middle" }}
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path fill="none" d="M0 0h24v24H0z"></path>
+                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"></path>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
