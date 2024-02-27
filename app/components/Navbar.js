@@ -125,7 +125,7 @@ export default function Navbar() {
                     pathname === "/createaccount" ? "underline" : ""
                   }`}
                 >
-                  <span className="flex items-center flex-wrap gap-2 bg-[#00cc99] px-3 py-2 rounded-xl">
+                  <span className="flex items-center flex-wrap gap-2 bg-[#00cc99] px-5 py-3 rounded-lg">
                     <img
                       src="/assets/sign_up.svg"
                       alt="Sign up SVG"
@@ -152,7 +152,7 @@ export default function Navbar() {
           <Link
             href="/createaccount"
             onClick={closeMenu}
-            className={` font-bold text-black  bg-white px-3 py-2 rounded-xl ${
+            className={` font-bold text-black  bg-white px-5 py-3 rounded-lg ${
               pathname === "/projects" ? "underline" : ""
             }`}
           >
