@@ -8,7 +8,8 @@ export default function Cards() {
   const cardData = [
     {
       title: "Register",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description:
+        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip quis nostrud exercitation ullamco ex ea commodo consequat.",
       icon: (
         <svg
           viewBox="0 0 24 24"
@@ -43,7 +44,7 @@ export default function Cards() {
     {
       title: "Create a Resume",
       description:
-        "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip quis nostrud exercitation ullamco ex ea commodo consequat.",
       icon: (
         <svg
           stroke="currentColor"
@@ -61,7 +62,7 @@ export default function Cards() {
     {
       title: "Find Job",
       description:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip quis nostrud exercitation ullamco ex ea commodo consequat.",
       icon: (
         <svg
           stroke="currentColor"
@@ -78,7 +79,7 @@ export default function Cards() {
     {
       title: "Apply Job",
       description:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip quis nostrud exercitation ullamco ex ea commodo consequat.",
       icon: (
         <svg
           viewBox="0 0 24 24"
@@ -118,7 +119,7 @@ export default function Cards() {
           {card.icon}
 
           <h2 className="text-xl font-semibold mb-2">{card.title}</h2>
-          <p className="text-gray-400 text-[0.5rem] md:w-[90%]">
+          <p className="text-gray-400 text-[0.5rem] md:w-[85%]">
             {card.description}
           </p>
         </div>
