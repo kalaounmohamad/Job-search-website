@@ -113,13 +113,13 @@ export default function Cards() {
     },
   ];
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-8 my-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-8 my-4">
       {cardData.map((card, index) => (
-        <div key={index} className="bg-white rounded-3xl p-4 flex flex-col">
+        <div key={index} className="bg-white rounded-3xl p-6 flex flex-col">
           {card.icon}
 
           <h2 className="text-xl font-semibold ">{card.title}</h2>
-          <p className="text-gray-400 text-[0.5rem] md:w-[90%] my-3">
+          <p className="text-gray-400 text-[0.5rem] md:pr-4 mt-3">
             {card.description}
           </p>
         </div>
