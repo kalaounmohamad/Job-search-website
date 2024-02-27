@@ -59,15 +59,13 @@ export default function Navbar() {
           >
             <ul
               className="md:flex  
-             md:justify-between gap-4 lg:gap-8 xl:gap-12 space-y-4 md:space-y-0"
+             md:justify-between gap-4 lg:gap-8 xl:gap-12 space-y-4 md:space-y-0 font-semibold"
             >
               <li>
                 <Link
                   href="/"
                   onClick={closeMenu}
-                  className={`block font-bold  ${
-                    pathname === "/" ? "underline" : ""
-                  }`}
+                  className={`block  ${pathname === "/" ? "underline" : ""}`}
                 >
                   Home
                 </Link>
@@ -77,7 +75,7 @@ export default function Navbar() {
                 <Link
                   href="/job"
                   onClick={closeMenu}
-                  className={`block font-bold  ${
+                  className={`block  ${
                     pathname === "/projects" ? "underline" : ""
                   }`}
                 >
@@ -88,7 +86,7 @@ export default function Navbar() {
                 <Link
                   href="/aboutus"
                   onClick={closeMenu}
-                  className={`block font-bold  ${
+                  className={`block  ${
                     pathname === "/projects" ? "underline" : ""
                   }`}
                 >
@@ -99,7 +97,7 @@ export default function Navbar() {
                 <Link
                   href="/contact"
                   onClick={closeMenu}
-                  className={`block font-bold  ${
+                  className={`block  ${
                     pathname === "/tickets" ? "underline" : ""
                   }`}
                 >
@@ -110,7 +108,7 @@ export default function Navbar() {
                 <Link
                   href="/signin"
                   onClick={closeMenu}
-                  className={`block font-bold    ${
+                  className={`block    ${
                     pathname === "/projects" ? "underline" : ""
                   }`}
                 >
@@ -121,7 +119,7 @@ export default function Navbar() {
                 <Link
                   href="/createaccount"
                   onClick={closeMenu}
-                  className={`font-bold text-black flex  gap-2 items-center ${
+                  className={`text-black flex  gap-2 items-center ${
                     pathname === "/createaccount" ? "underline" : ""
                   }`}
                 >
@@ -138,12 +136,12 @@ export default function Navbar() {
             </ul>
           </div>
         </div>
-        <div className="hidden md:flex items-center gap-4 lg:gap-8 xl:gap-12 text-sm lg:text-base">
+        <div className="hidden md:flex items-center gap-4 lg:gap-8 xl:gap-12 text-sm lg:text-base font-semibold">
           {/* Large screen */}
           <Link
             href="/signin"
             onClick={closeMenu}
-            className={`block font-bold text-white hover:opacity-50  ${
+            className={`block  text-white hover:opacity-50  ${
               pathname === "/projects" ? "underline" : ""
             }`}
           >
@@ -152,7 +150,7 @@ export default function Navbar() {
           <Link
             href="/createaccount"
             onClick={closeMenu}
-            className={` font-bold text-black  bg-white px-5 py-3 rounded-lg ${
+            className={`  text-black  bg-white px-5 py-3 rounded-lg ${
               pathname === "/projects" ? "underline" : ""
             }`}
           >

@@ -1,9 +1,6 @@
-import { Poppins } from "next/font/google";
 import "./globals.scss";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
-const poppins = Poppins({ weight: "400", subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -13,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.className + " flex flex-col min-h-screen"}>
+      <body className=" flex flex-col min-h-screen">
         <Navbar />
         <div className="flex-grow ">{children}</div>
         <Footer />

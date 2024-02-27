@@ -5,8 +5,8 @@ export default function Banner() {
   return (
     <main className=" flex flex-col md:flex-row mx-auto ">
       <div className="relative md:w-[60%] flex flex-col items-center md:items-start justify-center gap-10  mt-5 mb-11 md:mt-0 md:mb-24 md:pl-10 md:pr-20 md:py-10">
-        <h1 className="text-5xl font-black ">Search, Find, & Apply</h1>
-        <p className="w-[90%] mb-5 font-semibold">
+        <h1 className="text-5xl font-bold ">Search, Find, & Apply</h1>
+        <p className="w-[90%] mb-5 font-medium">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
           consectetur ratione iste harum reprehenderit dicta recusandae eveniet
           harum reprehenderit dicta recusandae eveniet adipisicing consectetur
