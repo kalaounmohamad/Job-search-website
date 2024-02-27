@@ -148,7 +148,7 @@ export default function SwiperComponent() {
   ];
   return (
     <div className="justify-center items-center text-center pb-10">
-      <div className="flex flex-row justify-between mr-[-60vw]">
+      <div className="flex flex-row justify-between mr-[-45vw]">
         <Swiper
           breakpoints={{
             450: {
@@ -164,7 +164,7 @@ export default function SwiperComponent() {
               spaceBetween: 30,
             },
             1250: {
-              slidesPerView: 7,
+              slidesPerView: 6,
               spaceBetween: 30,
             },
           }}
@@ -178,7 +178,7 @@ export default function SwiperComponent() {
             <SwiperSlide key={index}>
               <div
                 key={index}
-                className="bg-white rounded-3xl text-left pt-7 px-6 pb-4 h-full flex flex-col justify-between group hover:bg-[#00cc99] hover:text-white "
+                className="bg-white rounded-3xl text-left pt-7 pl-6 pr-10 pb-4 h-full flex flex-col justify-between group hover:bg-[#00cc99] hover:text-white "
               >
                 {card.icon}
                 <h2 className="text-xl  font-semibold mb-8">{card.title}</h2>
