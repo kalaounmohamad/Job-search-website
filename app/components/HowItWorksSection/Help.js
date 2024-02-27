@@ -2,12 +2,12 @@ import React from "react";
 
 export default function Help() {
   return (
-    <div className="flex flex-col gap-9 md:gap-16 md:flex-row md:items-center py-24 md:py-32 ">
+    <div className="flex flex-col gap-9 md:gap-16 md:flex-row md:items-center pt-12 pb-24 md:py-32 ">
       <div className="md:w-[40%]">
         <div className="bg-gray-400 h-[340px] rounded-3xl mx-auto"></div>
       </div>
       <div className="md:w-[60%] flex flex-col gap-6 md:gap-7 items-center text-center md:text-left md:items-start">
-        <h1 className="text-3xl md:text-4xl font-semibold md:leading-[3.25rem]">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold md:leading-[3.25rem]">
           We will help you to become an employee in your dream company
         </h1>
         <p className="text-gray-400">
@@ -16,9 +16,7 @@ export default function Help() {
           nemo in, quidem architecto iste fugit? sapiente consequuntur est
           consectetur adipisicing Similique nemo in.
         </p>
-        <button className="bg-transparent hover:bg-primary text-primary font-semibold hover:text-white py-3 px-7 border-2 border-primary hover:border-transparent rounded-lg md:whitespace-nowrap">
-          Learn More
-        </button>
+        <button className="regular-button">Learn More</button>
       </div>
     </div>
   );

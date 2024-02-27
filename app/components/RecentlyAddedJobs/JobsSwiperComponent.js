@@ -9,16 +9,22 @@ import { FreeMode, Navigation, Pagination } from "swiper/modules";
 
 import React from "react";
 
-export default function SwiperComponent() {
+export default function JobsSwiperComponent() {
   const swiperData = [
     {
-      title: "Design and Development",
-      description: "350 Job Vacancy",
+      title: "UI/UX Designer",
+      company: "Dimensions Studio",
+      type: "Full Time",
+      location: "New York, USA",
+
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse rem magnam, expedita tempora facere minus assumenda, labore enim totam corrupti ",
+      location: "New York, USA",
       icon: (
         <svg
           stroke-width="0"
           viewBox="0 0 24 24"
-          className="w-11 mb-4 fill-[#00cc99] group-hover:fill-white"
+          className="w-11 mb-4 fill-[#00cc99] "
           xmlns="http://www.w3.org/2000/svg"
         >
           <path d="M19.864 8.465a3.505 3.505 0 0 0-3.03-4.449A3.005 3.005 0 0 0 14 2a2.98 2.98 0 0 0-2 .78A2.98 2.98 0 0 0 10 2c-1.301 0-2.41.831-2.825 2.015a3.505 3.505 0 0 0-3.039 4.45A4.028 4.028 0 0 0 2 12c0 1.075.428 2.086 1.172 2.832A4.067 4.067 0 0 0 3 16c0 1.957 1.412 3.59 3.306 3.934A3.515 3.515 0 0 0 9.5 22c.979 0 1.864-.407 2.5-1.059A3.484 3.484 0 0 0 14.5 22a3.51 3.51 0 0 0 3.19-2.06 4.006 4.006 0 0 0 3.138-5.108A4.003 4.003 0 0 0 22 12a4.028 4.028 0 0 0-2.136-3.535zM9.5 20c-.711 0-1.33-.504-1.47-1.198L7.818 18H7c-1.103 0-2-.897-2-2 0-.352.085-.682.253-.981l.456-.816-.784-.51A2.019 2.019 0 0 1 4 12c0-.977.723-1.824 1.682-1.972l1.693-.26-1.059-1.346a1.502 1.502 0 0 1 1.498-2.39L9 6.207V5a1 1 0 0 1 2 0v13.5c0 .827-.673 1.5-1.5 1.5zm9.575-6.308-.784.51.456.816c.168.3.253.63.253.982 0 1.103-.897 2-2.05 2h-.818l-.162.802A1.502 1.502 0 0 1 14.5 20c-.827 0-1.5-.673-1.5-1.5V5c0-.552.448-1 1-1s1 .448 1 1.05v1.207l1.186-.225a1.502 1.502 0 0 1 1.498 2.39l-1.059 1.347 1.693.26A2.002 2.002 0 0 1 20 12c0 .683-.346 1.315-.925 1.692z"></path>
@@ -26,14 +32,18 @@ export default function SwiperComponent() {
       ),
     },
     {
-      title: "Accounting and Finance",
-      description: "350 Job Vacancy",
+      title: "Full Stack Developer",
+      company: "Alpander",
+      type: "Part Time",
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse rem magnam, expedita tempora facere minus assumenda, labore enim totam corrupti ",
 
+      location: "San Francisco, CA",
       icon: (
         <svg
           stroke-width="0"
           viewBox="0 0 24 24"
-          className="w-11 mb-4 fill-[#00cc99] group-hover:fill-white"
+          className="w-11 mb-4 fill-[#00cc99] "
           xmlns="http://www.w3.org/2000/svg"
         >
           <path d="M5 3H3v18h18v-2H5z"></path>
@@ -42,12 +52,16 @@ export default function SwiperComponent() {
       ),
     },
     {
-      title: "Bank Institution",
-      description: "350 Job Vacancy",
+      title: "Product Designer",
+      company: "XReact Tech",
+      type: "Full Time",
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse rem magnam, expedita tempora facere minus assumenda, labore enim totam corrupti ",
+      location: "New York, USA",
       icon: (
         <svg
           stroke-width="0"
-          className="w-11 mb-4 fill-[#00cc99] group-hover:fill-white"
+          className="w-11 mb-4 fill-[#00cc99] "
           viewBox="0 0 1024 1024"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -56,13 +70,17 @@ export default function SwiperComponent() {
       ),
     },
     {
-      title: "Product Management",
-      description: "350 Job Vacancy",
+      title: "Software Engineer",
+      company: "Amazon",
+      type: "Full Time",
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse rem magnam, expedita tempora facere minus assumenda, labore enim totam corrupti ",
+      location: "New York, USA",
       icon: (
         <svg
           stroke-width="0"
           viewBox="0 0 24 24"
-          className="w-11 mb-4 fill-[#00cc99] group-hover:fill-white"
+          className="w-11 mb-4 fill-[#00cc99] "
           xmlns="http://www.w3.org/2000/svg"
         >
           <path fill="none" d="M0 0h24v24H0z"></path>
@@ -71,13 +89,17 @@ export default function SwiperComponent() {
       ),
     },
     {
-      title: "Hardware Engineering",
-      description: "350 Job Vacancy",
+      title: "Hardware Engineer",
+      company: "Apple Inc.",
+      type: "Full Time",
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse rem magnam, expedita tempora facere minus assumenda, labore enim totam corrupti ",
+      location: "New York, USA",
       icon: (
         <svg
           stroke-width="0"
           viewBox="0 0 24 24"
-          className="w-11 mb-4 fill-[#00cc99] group-hover:fill-white"
+          className="w-11 mb-4 fill-[#00cc99] "
           xmlns="http://www.w3.org/2000/svg"
         >
           <path fill="none" d="M0 0h24v24H0z"></path>
@@ -86,13 +108,17 @@ export default function SwiperComponent() {
       ),
     },
     {
-      title: "Web Development",
-      description: "350 Job Vacancy",
+      title: "Data Scientist",
+      company: "Microsoft",
+      type: "Part Time",
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse rem magnam, expedita tempora facere minus assumenda, labore enim totam corrupti ",
+      location: "New York, USA",
       icon: (
         <svg
           stroke-width="0"
           viewBox="0 0 24 24"
-          className="w-11 mb-4 fill-[#00cc99] group-hover:fill-white"
+          className="w-11 mb-4 fill-[#00cc99] "
           xmlns="http://www.w3.org/2000/svg"
         >
           <path d="M19.864 8.465a3.505 3.505 0 0 0-3.03-4.449A3.005 3.005 0 0 0 14 2a2.98 2.98 0 0 0-2 .78A2.98 2.98 0 0 0 10 2c-1.301 0-2.41.831-2.825 2.015a3.505 3.505 0 0 0-3.039 4.45A4.028 4.028 0 0 0 2 12c0 1.075.428 2.086 1.172 2.832A4.067 4.067 0 0 0 3 16c0 1.957 1.412 3.59 3.306 3.934A3.515 3.515 0 0 0 9.5 22c.979 0 1.864-.407 2.5-1.059A3.484 3.484 0 0 0 14.5 22a3.51 3.51 0 0 0 3.19-2.06 4.006 4.006 0 0 0 3.138-5.108A4.003 4.003 0 0 0 22 12a4.028 4.028 0 0 0-2.136-3.535zM9.5 20c-.711 0-1.33-.504-1.47-1.198L7.818 18H7c-1.103 0-2-.897-2-2 0-.352.085-.682.253-.981l.456-.816-.784-.51A2.019 2.019 0 0 1 4 12c0-.977.723-1.824 1.682-1.972l1.693-.26-1.059-1.346a1.502 1.502 0 0 1 1.498-2.39L9 6.207V5a1 1 0 0 1 2 0v13.5c0 .827-.673 1.5-1.5 1.5zm9.575-6.308-.784.51.456.816c.168.3.253.63.253.982 0 1.103-.897 2-2.05 2h-.818l-.162.802A1.502 1.502 0 0 1 14.5 20c-.827 0-1.5-.673-1.5-1.5V5c0-.552.448-1 1-1s1 .448 1 1.05v1.207l1.186-.225a1.502 1.502 0 0 1 1.498 2.39l-1.059 1.347 1.693.26A2.002 2.002 0 0 1 20 12c0 .683-.346 1.315-.925 1.692z"></path>
@@ -100,66 +126,44 @@ export default function SwiperComponent() {
       ),
     },
     {
-      title: "Design and Development",
-      description: "350 Job Vacancy",
+      title: "Technical Consultant",
+      company: "Consutancy co.",
+      type: "Full Time",
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse rem magnam, expedita tempora facere minus assumenda, labore enim totam corrupti ",
+      location: "New York, USA",
       icon: (
         <svg
           stroke-width="0"
           viewBox="0 0 24 24"
-          className="w-11 mb-4 fill-[#00cc99] group-hover:fill-white"
+          className="w-11 mb-4 fill-[#00cc99] "
           xmlns="http://www.w3.org/2000/svg"
         >
           <path d="M19.864 8.465a3.505 3.505 0 0 0-3.03-4.449A3.005 3.005 0 0 0 14 2a2.98 2.98 0 0 0-2 .78A2.98 2.98 0 0 0 10 2c-1.301 0-2.41.831-2.825 2.015a3.505 3.505 0 0 0-3.039 4.45A4.028 4.028 0 0 0 2 12c0 1.075.428 2.086 1.172 2.832A4.067 4.067 0 0 0 3 16c0 1.957 1.412 3.59 3.306 3.934A3.515 3.515 0 0 0 9.5 22c.979 0 1.864-.407 2.5-1.059A3.484 3.484 0 0 0 14.5 22a3.51 3.51 0 0 0 3.19-2.06 4.006 4.006 0 0 0 3.138-5.108A4.003 4.003 0 0 0 22 12a4.028 4.028 0 0 0-2.136-3.535zM9.5 20c-.711 0-1.33-.504-1.47-1.198L7.818 18H7c-1.103 0-2-.897-2-2 0-.352.085-.682.253-.981l.456-.816-.784-.51A2.019 2.019 0 0 1 4 12c0-.977.723-1.824 1.682-1.972l1.693-.26-1.059-1.346a1.502 1.502 0 0 1 1.498-2.39L9 6.207V5a1 1 0 0 1 2 0v13.5c0 .827-.673 1.5-1.5 1.5zm9.575-6.308-.784.51.456.816c.168.3.253.63.253.982 0 1.103-.897 2-2.05 2h-.818l-.162.802A1.502 1.502 0 0 1 14.5 20c-.827 0-1.5-.673-1.5-1.5V5c0-.552.448-1 1-1s1 .448 1 1.05v1.207l1.186-.225a1.502 1.502 0 0 1 1.498 2.39l-1.059 1.347 1.693.26A2.002 2.002 0 0 1 20 12c0 .683-.346 1.315-.925 1.692z"></path>
-        </svg>
-      ),
-    },
-    {
-      title: "Project Management",
-      description: "350 Job Vacancy",
-      icon: (
-        <svg
-          stroke-width="0"
-          viewBox="0 0 256 256"
-          className="w-11 mb-4 fill-[#00cc99] group-hover:fill-white"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM216,72v72H40V72Zm0,128H40V160H216v40Z"></path>
-        </svg>
-      ),
-    },
-    {
-      title: "Consultancy",
-      description: "350 Job Vacancy",
-      icon: (
-        <svg
-          stroke-width="0"
-          viewBox="0 0 256 256"
-          className="w-11 mb-4 fill-[#00cc99] group-hover:fill-white"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM216,72v72H40V72Zm0,128H40V160H216v40Z"></path>
         </svg>
       ),
     },
   ];
   return (
     <div className="justify-center items-center text-center pb-16">
-      <div className="flex flex-row justify-between mr-[-80vw] lg:mr-[-45vw]">
+      <div className="flex justify-between mr-[-150vw] sm:mr-[-80vw] md:mr-[-75vw] lg:mr-[-35vw] xl:mr-[-55vw] ">
         <Swiper
           breakpoints={{
             1: {
-              slidesPerView: 2,
+              slidesPerView: 3,
               spaceBetween: 15,
             },
 
-            700: {
+            665: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+
+            1280: {
               slidesPerView: 4,
-              spaceBetween: 15,
+              spaceBetween: 40,
             },
-            830: {
-              slidesPerView: 6,
-              spaceBetween: 30,
-            },
+
             // 1250: {
             //   slidesPerView: 6,
             //   spaceBetween: 30,
@@ -175,13 +179,60 @@ export default function SwiperComponent() {
             <SwiperSlide key={index}>
               <div
                 key={index}
-                className="bg-white rounded-3xl text-left pt-7 pl-6 pr-10 pb-4 h-full flex flex-col justify-between group hover:bg-[#00cc99] hover:text-white "
+                className="bg-white rounded-3xl text-left pt-7 pl-6 pr-10 pb-4 h-full flex flex-col justify-between  "
               >
                 {card.icon}
-                <h2 className="text-xl  font-semibold mb-8">{card.title}</h2>
-                <p className="text-gray-400 group-hover:text-white text-xs font-semibold">
+                <h2 className="text-xl  font-semibold mb-4">{card.title}</h2>
+                <p className="text-gray-400 text-sm font-semibold mb-7">
+                  {card.company}
+                </p>
+                <p className="text-gray-400 font-medium text-xs mb-6">
                   {card.description}
                 </p>
+                <div className="flex gap-3 mb-6">
+                  <div className="flex gap-2 items-center bg-[#FBFBFB] p-3 rounded-lg">
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      className=" w-5 h-5"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill="none"
+                        stroke="#000"
+                        stroke-width="2"
+                        d="M12,22 C12,22 4,16 4,10 C4,5 8,2 12,2 C16,2 20,5 20,10 C20,16 12,22 12,22 Z M12,13 C13.657,13 15,11.657 15,10 C15,8.343 13.657,7 12,7 C10.343,7 9,8.343 9,10 C9,11.657 10.343,13 12,13 L12,13 Z"
+                      ></path>
+                    </svg>
+                    <p className="text-xs font-medium">{card.location}</p>
+                  </div>
+                  <div className="flex gap-2 items-center bg-[#FBFBFB] p-3 rounded-lg">
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 256 256"
+                      className=" w-5 h-5"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM216,72v72H40V72Zm0,128H40V160H216v40Z"></path>
+                    </svg>
+                    <p className="text-xs font-medium">{card.type}</p>
+                  </div>
+                </div>
+                <button className="flex items-center gap-3 text-[#00cc99] fill-[#00cc99] mb-7">
+                  <p className="font-semibold">Apply now</p>
+                  <svg
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    className="h-5 w-5 "
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"></path>
+                  </svg>
+                </button>
               </div>
             </SwiperSlide>
           ))}
