@@ -4,11 +4,13 @@ import SearchBar from "./SearchBar";
 export default function Banner() {
   return (
     <main className=" flex flex-col md:flex-row mx-auto ">
-      <div className="relative md:w-[60%] flex flex-col items-center md:items-start justify-center gap-10  mt-5 mb-11 md:mt-0 md:mb-20 md:pl-10 md:pr-20 md:py-10">
+      <div className="relative md:w-[60%] flex flex-col items-center md:items-start justify-center gap-10  mt-5 mb-11 md:mt-0 md:mb-24 md:pl-10 md:pr-20 md:py-10">
         <h1 className="text-5xl font-black ">Search, Find, & Apply</h1>
         <p className="w-[90%] mb-5 font-semibold">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
           consectetur ratione iste harum reprehenderit dicta recusandae eveniet
+          harum reprehenderit dicta recusandae eveniet adipisicing consectetur
+          adipisicing elit.
         </p>
         <SearchBar />
         {/* Bg on <md screens */}
@@ -32,9 +34,9 @@ export default function Banner() {
           <div className="md:hidden absolute bottom-0 top-0 w-full h-full bg-primary  " />
         </div>
 
-        <div className="py-10 md:pt-0 md:my-auto">
+        <div className="py-10 md:pt-0 md:pb-24 md:my-auto">
           <div className="ml-[20%] mb-10">
-            <div className="bg-white h-16 w-16 rounded-lg p-3 transform -rotate-6">
+            <div className="bg-white h-20 w-20 rounded-lg p-3 transform -rotate-6">
               <svg
                 stroke="currentColor"
                 fill="none"
@@ -58,7 +60,7 @@ export default function Banner() {
             </div>
           </div>
           <div className="ml-[75%] mb-10">
-            <div className="bg-white h-16 w-16 rounded-lg p-3 transform rotate-6">
+            <div className="bg-white h-20 w-20 rounded-lg p-3 transform rotate-6">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
@@ -79,7 +81,7 @@ export default function Banner() {
             </div>
           </div>
           <div className="ml-[15%]">
-            <div className="bg-white h-16 w-16 rounded-lg p-3 transform -rotate-6">
+            <div className="bg-white h-20 w-20 rounded-lg p-3 transform -rotate-6">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
