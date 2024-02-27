@@ -11,7 +11,7 @@ export default function LearnMore() {
           repellendus quas molestiae, atque itaque nobis assumenda? Placeat
           similique cupiditate nisi exercitationem soluta!
         </p>
-        <button class="bg-transparent hover:bg-primary text-primary font-semibold hover:text-white py-3 px-8 border-2 border-primary hover:border-transparent rounded-lg md:whitespace-nowrap order-1 md:order-none self-start">
+        <button class="regular-button order-1 md:order-none self-start">
           Learn More
         </button>
         <div className="px-10 md:px-0">

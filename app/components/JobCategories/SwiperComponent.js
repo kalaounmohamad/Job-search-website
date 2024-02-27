@@ -147,7 +147,7 @@ export default function SwiperComponent() {
     },
   ];
   return (
-    <div className="justify-center items-center text-center py-12">
+    <div className="justify-center items-center text-center pb-10">
       <div
         className="flex flex-row justify-between "
         style={{ marginRight: "-60vw" }}
@@ -181,11 +181,11 @@ export default function SwiperComponent() {
             <SwiperSlide key={index}>
               <div
                 key={index}
-                className="bg-white rounded-3xl text-left p-5 pb-3 h-full flex flex-col justify-between group hover:bg-[#00cc99] hover:text-white "
+                className="bg-white rounded-3xl text-left pt-7 px-6 pb-4 h-full flex flex-col justify-between group hover:bg-[#00cc99] hover:text-white "
               >
                 {card.icon}
                 <h2 className="text-xl  font-semibold mb-8">{card.title}</h2>
-                <p className="text-gray-400 group-hover:text-white text-xs">
+                <p className="text-gray-400 group-hover:text-white text-xs font-semibold">
                   {card.description}
                 </p>
               </div>
@@ -193,9 +193,7 @@ export default function SwiperComponent() {
           ))}
         </Swiper>
       </div>
-      <button class="bg-transparent my-10 hover:bg-primary text-primary font-semibold hover:text-white py-2 px-4 border-2 border-primary hover:border-transparent rounded-lg md:whitespace-nowrap order-1 md:order-none">
-        Learn More
-      </button>
+      <button class="regular-button my-10">View More</button>
     </div>
   );
 }

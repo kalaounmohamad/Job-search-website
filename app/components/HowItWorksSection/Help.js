@@ -16,7 +16,7 @@ export default function Help() {
           nemo in, quidem architecto iste fugit? sapiente consequuntur est
           consectetur adipisicing Similique nemo in.
         </p>
-        <button className="bg-transparent hover:bg-primary text-primary font-semibold hover:text-white py-3 px-7 border-2 border-primary hover:border-transparent rounded-lg md:whitespace-nowrap order-1 md:order-none">
+        <button className="bg-transparent hover:bg-primary text-primary font-semibold hover:text-white py-3 px-7 border-2 border-primary hover:border-transparent rounded-lg md:whitespace-nowrap">
           Learn More
         </button>
       </div>

@@ -30,6 +30,10 @@ li{
     @apply hover:opacity-50;
 }
 
+.regular-button{
+  @apply bg-transparent hover:bg-primary text-primary font-semibold hover:text-white py-3 px-8 border-2 border-primary hover:border-transparent rounded-lg md:whitespace-nowrap;
+}
+
 @layer utilities {
     .placeholder-black::placeholder {
       color: black;
