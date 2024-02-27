@@ -118,7 +118,7 @@ export default function Cards() {
           {card.icon}
 
           <h2 className="text-xl font-semibold mb-2">{card.title}</h2>
-          <p className="text-gray-400 text-xs pr-4">{card.description}</p>
+          <p className="text-gray-400 text-xs md:w-[90%]">{card.description}</p>
         </div>
       ))}
     </div>
