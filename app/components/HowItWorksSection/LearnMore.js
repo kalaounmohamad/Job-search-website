@@ -14,9 +14,7 @@ export default function LearnMore() {
         <button class="regular-button order-1 md:order-none self-start">
           Learn More
         </button>
-        <div className="px-10 md:px-0">
-          <Cards />
-        </div>
+        <Cards />
       </div>
     </>
   );

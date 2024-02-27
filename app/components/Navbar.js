@@ -34,13 +34,13 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav className="max-w-screen-2xl mx-auto flex justify-between items-center my-6 md:mt-14 flex-wrap w-full px-5 sm:px-8 md:px-20">
+      <nav className="max-w-screen-2xl mx-auto flex justify-between items-center my-9 md:mt-14 flex-wrap w-full px-5 sm:px-8 md:px-20">
         <div
           className={`flex gap-8 lg:gap-16 xl:gap-24 text-sm lg:text-base  ${
             menuSet ? "mx-0" : "mx-auto md:mx-0"
           }`}
         >
-          <Link href="/" className="w-[100px] lg:w-auto ">
+          <Link href="/" className="w-auto md:w-[100px] lg:w-auto ">
             <Image
               src={Logo}
               alt="Jobnow logo"
@@ -150,7 +150,7 @@ export default function Navbar() {
           <Link
             href="/createaccount"
             onClick={closeMenu}
-            className={`  text-black  bg-white px-5 py-3 rounded-lg ${
+            className={`  text-black  bg-white px-5 md:px-3 lg:px-5 py-3 rounded-lg ${
               pathname === "/projects" ? "underline" : ""
             }`}
           >

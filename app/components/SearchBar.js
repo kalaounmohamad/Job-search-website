@@ -3,7 +3,7 @@ import LocationDropdown from "./LocationDropdown";
 
 export default function SearchBar() {
   return (
-    <div className="flex flex-col sm:flex-row flex-wrap gap-4 md:w-full  bg-white p-4 rounded-2xl">
+    <div className="flex flex-col sm:flex-row flex-wrap gap-4 md:w-full  bg-white pt-4 sm:p-4 rounded-2xl">
       <div className="flex-grow flex flex-wrap gap-4  font-semibold ">
         {/* Job title or keyword input field */}
         <div className="lg:w-[55%] flex-grow lg:flex-grow-0 relative bg-gray-100 rounded-lg cursor-pointer hover:outline-[#00cc99] focus:outline-[#00cc99]">

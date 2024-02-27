@@ -148,25 +148,26 @@ export default function SwiperComponent() {
   ];
   return (
     <div className="justify-center items-center text-center pb-10">
-      <div className="flex flex-row justify-between mr-[-45vw]">
+      <div className="flex flex-row justify-between mr-[-80vw] lg:mr-[-45vw]">
         <Swiper
           breakpoints={{
-            450: {
+            1: {
               slidesPerView: 2,
               spaceBetween: 15,
             },
+
             700: {
               slidesPerView: 4,
               spaceBetween: 15,
             },
             830: {
-              slidesPerView: 5,
-              spaceBetween: 30,
-            },
-            1250: {
               slidesPerView: 6,
               spaceBetween: 30,
             },
+            // 1250: {
+            //   slidesPerView: 6,
+            //   spaceBetween: 30,
+            // },
           }}
           loop={true}
           freeMode={true}

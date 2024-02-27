@@ -5,8 +5,10 @@ export default function Banner() {
   return (
     <main className=" flex flex-col md:flex-row mx-auto ">
       <div className="relative md:w-[60%] flex flex-col items-center md:items-start justify-center gap-7  mt-5 mb-11 md:mt-0 md:mb-24 md:pl-10 md:pr-20 md:py-10">
-        <h1 className="text-5xl font-bold ">Search, Find, & Apply</h1>
-        <p className="w-[90%] mb-5 font-medium">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center md:text-left">
+          Search, Find, & Apply
+        </h1>
+        <p className="md:w-[90%] mb-5 font-medium">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
           consectetur ratione iste harum reprehenderit dicta recusandae eveniet
           harum reprehenderit dicta recusandae eveniet adipisicing consectetur
@@ -16,10 +18,10 @@ export default function Banner() {
         {/* Bg on <md screens */}
 
         <div className="md:hidden absolute -bottom-11 -top-[44px] sm:-top-[52px] -left-5 sm:-left-8 -z-10 w-screen  overflow-hidden">
-          <div className="md:hidden absolute w-full h-full bg-gray-100  " />
+          <div className="md:hidden absolute w-full h-full bg-[#FBFBFB]  " />
         </div>
-        <div className="md:hidden absolute -bottom-11 -top-[127px] -left-5 sm:-left-8 -z-20 w-screen  overflow-hidden">
-          <div className="md:hidden absolute w-full h-full bg-gray-200  " />
+        <div className="md:hidden absolute -bottom-11 -top-[250px] -left-5 sm:-left-8 -z-20 w-screen  overflow-hidden">
+          <div className="md:hidden absolute w-full h-full bg-[#F2F2F2] " />
         </div>
       </div>
 
