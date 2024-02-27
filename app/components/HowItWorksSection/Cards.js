@@ -15,7 +15,7 @@ export default function Cards() {
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className=" bg-white w-14 rounded-3xl py-3 pr-3"
+          className=" bg-white w-11 mb-4 rounded-3xl "
         >
           <path
             d="M15.8125 12.0217H3.77148"
@@ -51,7 +51,7 @@ export default function Cards() {
           fill="#00cc99"
           stroke-width="0"
           viewBox="0 0 24 24"
-          className=" bg-white w-14 rounded-3xl py-3 pr-3 text-[#00cc99]"
+          className=" bg-white w-11 mb-4 rounded-3xl  text-[#00cc99]"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path d="M19.903 8.586a.997.997 0 0 0-.196-.293l-6-6a.997.997 0 0 0-.293-.196c-.03-.014-.062-.022-.094-.033a.991.991 0 0 0-.259-.051C13.04 2.011 13.021 2 13 2H6c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-.021-.011-.04-.013-.062a.952.952 0 0 0-.051-.259c-.01-.032-.019-.063-.033-.093zM16.586 8H14V5.414L16.586 8zM6 20V4h6v5a1 1 0 0 0 1 1h5l.002 10H6z"></path>
@@ -69,7 +69,7 @@ export default function Cards() {
           fill="currentColor"
           stroke-width="0"
           viewBox="0 0 24 24"
-          className=" bg-white w-14 rounded-3xl py-3 pr-3 text-[#00cc99]"
+          className=" bg-white w-11 mb-4 rounded-3xl  text-[#00cc99]"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path d="M13.707 2.293A.996.996 0 0 0 13 2H6c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9a.996.996 0 0 0-.293-.707l-6-6zM6 4h6.586L18 9.414l.002 9.174-2.568-2.568c.35-.595.566-1.281.566-2.02 0-2.206-1.794-4-4-4s-4 1.794-4 4 1.794 4 4 4c.739 0 1.425-.216 2.02-.566L16.586 20H6V4zm6 12c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2z"></path>
@@ -85,7 +85,7 @@ export default function Cards() {
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className=" bg-white w-14 rounded-3xl py-3 pr-3"
+          className=" bg-white w-11 mb-4 rounded-3xl "
         >
           <path
             d="M15.8125 12.0217H3.77148"
@@ -118,8 +118,8 @@ export default function Cards() {
         <div key={index} className="bg-white rounded-3xl p-4 flex flex-col">
           {card.icon}
 
-          <h2 className="text-xl font-semibold mb-2">{card.title}</h2>
-          <p className="text-gray-400 text-[0.5rem] md:w-[85%]">
+          <h2 className="text-xl font-semibold ">{card.title}</h2>
+          <p className="text-gray-400 text-[0.5rem] md:w-[85%] my-3">
             {card.description}
           </p>
         </div>
