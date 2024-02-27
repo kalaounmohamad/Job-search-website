@@ -148,10 +148,7 @@ export default function SwiperComponent() {
   ];
   return (
     <div className="justify-center items-center text-center pb-10">
-      <div
-        className="flex flex-row justify-between "
-        style={{ marginRight: "-60vw" }}
-      >
+      <div className="flex flex-row justify-between mr-[-60vw]">
         <Swiper
           breakpoints={{
             450: {
