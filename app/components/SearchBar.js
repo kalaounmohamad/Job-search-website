@@ -6,7 +6,7 @@ export default function SearchBar() {
     <div className="flex flex-col sm:flex-row flex-wrap gap-4 md:w-full  bg-white p-4 rounded-2xl">
       <div className="flex-grow flex flex-wrap gap-4  font-bold ">
         {/* Job title or keyword input field */}
-        <div className="flex-grow relative bg-gray-100 rounded-lg cursor-pointer hover:outline-[#00cc99] focus:outline-[#00cc99]">
+        <div className="lg:w-7/12 flex-grow lg:flex-grow-0 relative bg-gray-100 rounded-lg cursor-pointer hover:outline-[#00cc99] focus:outline-[#00cc99]">
           <img
             src="/assets/magnifier.svg"
             alt="Magnifier SVG"
