@@ -179,7 +179,7 @@ export default function JobsSwiperComponent() {
             <SwiperSlide key={index}>
               <div
                 key={index}
-                className="bg-white rounded-3xl text-left pt-7 pl-6 pr-10 pb-4 h-full flex flex-col justify-between  "
+                className="bg-white group rounded-3xl text-left pt-7 pl-6 pr-10 pb-4 h-full flex flex-col justify-between  "
               >
                 {card.icon}
                 <h2 className="text-xl  font-semibold mb-4">{card.title}</h2>
@@ -222,17 +222,19 @@ export default function JobsSwiperComponent() {
                     <p className="text-xs font-medium">{card.type}</p>
                   </div>
                 </div>
-                <button className="flex items-center gap-3 text-[#00cc99] fill-[#00cc99] mb-7">
-                  <p className="font-semibold">Apply now</p>
-                  <svg
-                    stroke-width="0"
-                    viewBox="0 0 512 512"
-                    className="h-5 w-5 "
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"></path>
-                  </svg>
-                </button>
+                <div className="flex ">
+                  <button className="flex items-center gap-3 text-[#00cc99] fill-[#00cc99] mb-7 group-hover:opacity-50 rounded-lg text-lg">
+                    <p className="font-semibold ">Apply now</p>
+                    <svg
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      className="h-5 w-5 "
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"></path>
+                    </svg>
+                  </button>
+                </div>
               </div>
             </SwiperSlide>
           ))}
