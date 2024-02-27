@@ -119,7 +119,7 @@ export default function Cards() {
           {card.icon}
 
           <h2 className="text-xl font-semibold ">{card.title}</h2>
-          <p className="text-gray-400 text-[0.5rem] md:w-[85%] my-3">
+          <p className="text-gray-400 text-[0.5rem] md:w-[90%] my-3">
             {card.description}
           </p>
         </div>
