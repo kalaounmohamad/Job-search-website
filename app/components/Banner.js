@@ -36,7 +36,7 @@ export default function Banner() {
 
         <div className="py-10 md:pt-0 md:pb-24 md:my-auto">
           <div className="ml-[20%] mb-10">
-            <div className="bg-white h-20 w-20 rounded-lg p-3 transform -rotate-6">
+            <div className="bg-white h-20 w-20 rounded-lg flex items-center justify-center transform -rotate-6">
               <svg
                 stroke="currentColor"
                 fill="none"
@@ -44,7 +44,7 @@ export default function Banner() {
                 viewBox="0 0 24 24"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="h-full w-full"
+                class="h-10 w-10"
                 style={{ color: "#00cc99", verticalAlign: "middle" }}
                 height="1em"
                 width="1em"
@@ -60,13 +60,13 @@ export default function Banner() {
             </div>
           </div>
           <div className="ml-[75%] mb-10">
-            <div className="bg-white h-20 w-20 rounded-lg p-3 transform rotate-6">
+            <div className="bg-white h-20 w-20 flex items-center justify-center rounded-lg p-3 transform rotate-6">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
                 stroke-width="0"
                 viewBox="0 0 16 16"
-                class="h-full w-full rounded-lg p-1.5"
+                class="h-10 w-10 rounded-lg p-1.5"
                 style={{
                   color: "#fff",
                   verticalAlign: "middle",
@@ -81,13 +81,13 @@ export default function Banner() {
             </div>
           </div>
           <div className="ml-[15%]">
-            <div className="bg-white h-20 w-20 rounded-lg p-3 transform -rotate-6">
+            <div className="bg-white h-20 w-20 flex items-center justify-center rounded-lg p-3 transform -rotate-6">
               <svg
                 stroke="currentColor"
                 fill="currentColor"
                 stroke-width="0"
                 viewBox="0 0 24 24"
-                class="h-full w-full"
+                class="h-10 w-10"
                 style={{ color: "#00cc99", verticalAlign: "middle" }}
                 height="1em"
                 width="1em"
