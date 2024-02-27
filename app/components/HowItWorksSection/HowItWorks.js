@@ -4,7 +4,7 @@ import Help from "./Help";
 
 export default function HowItWorks() {
   return (
-    <div>
+    <div className="max-w-screen-2xl mx-auto">
       <h1 className="text-4xl">How it works</h1>
       <LearnMore />
       <Help />
