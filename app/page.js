@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <WholeBanner />
-      <div className="px-8 md:px-20 pt-20 bg-[#F6F6F6]">
+      <div className="px-8 md:px-20 pt-20 bg-[#FBFBFB]">
         <HowItWorks />
       </div>
       <div className="px-8 md:px-20 pt-20 bg-[#F2F2F2]">
