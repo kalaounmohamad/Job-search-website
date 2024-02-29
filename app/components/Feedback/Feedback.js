@@ -51,7 +51,7 @@ export default function Feedback() {
   return (
     <div>
       <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6">
-        People's Feedback about JobNow!
+        Feedback about JobNow!
       </h1>
       <Swiper
         breakpoints={{
