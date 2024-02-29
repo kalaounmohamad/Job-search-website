@@ -4,29 +4,33 @@ import Logo from "../../img/logo2.png";
 import Instagram from "../../img/instagram.png";
 import Facebook from "../../img/facebook.png";
 import X from "../../img/X.png";
+import Overlay from "./Overlay";
 
 export default function Footer() {
   return (
-    <footer className="px-8 md:px-20 pt-60 py-20 bg-primary">
+    <footer className="relative px-8 md:px-20 pt-60 py-20 bg-primary">
       <div className="max-w-screen-2xl mx-auto w-full 2xl:px-20">
+        <div className="absolute top-[-150px] sm:top-[-120px] md:top-[-170px] w-[81%] left-1/2 transform -translate-x-1/2 ">
+          <Overlay />
+        </div>
         <div className="flex flex-col flex-wrap xl:flex-nowrap md:flex-row justify-between md:items-center">
           <div className="w-4/5 lg:w-2/5 mb-16 xl:mb-0 md:pr-40">
             <Link href="/" className="w-auto">
               <Image
                 src={Logo}
                 alt="Jobnow logo"
-                width={200}
+                width={250}
                 loading="eager"
                 className="hover:opacity-75"
               />
             </Link>
             <p className="text-white mt-4 md:mt-8">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-              dolores quaerat ipsa voluptatum quo? Numquam laborum expedita.
+              dolores quaerat ipsa voluptatum quo?
             </p>
           </div>
 
-          <div className="flex flex-wrap md:flex-nowrap gap-x-12 md:gap-x-32">
+          <div className="flex flex-wrap lg:flex-nowrap gap-x-12 md:gap-x-32">
             <div className="flex gap-x-12 md:gap-x-32">
               <div className="flex flex-col gap-1 text-white">
                 <h1 className="mb-1">Company</h1>
