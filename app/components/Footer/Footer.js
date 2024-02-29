@@ -1,14 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "../img/logo.png";
-import Instagram from "../img/instagram.png";
-import Facebook from "../img/facebook.png";
-import X from "../img/X.png";
+import Logo from "../../img/logo.png";
+import Instagram from "../../img/instagram.png";
+import Facebook from "../../img/facebook.png";
+import X from "../../img/X.png";
 
 export default function Footer() {
   return (
-    <footer>
-      <div className="max-w-screen-2xl mx-auto border-t-2 border-gray-200 py-5 flex flex-row justify-between items-center flex-wrap gap-y-4">
+    <footer className="px-8 md:px-20 pt-60 py-20 bg-primary">
+      <div className="max-w-screen-2xl mx-auto w-full 2xl:px-20">
         {/* <div className="max-w-5xl mx-auto border-t-2 border-gray-200 py-5 sm:flex sm:flex-row sm:justify-between sm:items-center sm:flex-wrap grid grid-cols-2 grid-rows-2"> */}
 
         <Link href="/">

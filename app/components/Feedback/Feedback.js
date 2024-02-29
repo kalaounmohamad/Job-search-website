@@ -8,6 +8,7 @@ import "swiper/css/free-mode";
 import { FreeMode, Navigation, Pagination } from "swiper/modules";
 
 import { RxArrowLeft, RxArrowRight } from "react-icons/rx";
+import { useRef, useState } from "react";
 
 export default function Feedback() {
   const feedbackData = [
@@ -48,6 +49,14 @@ export default function Feedback() {
       img: "Steve's Img",
     },
   ];
+
+  const handleSlideChange = (swiper) => {
+    setCurrentIndex(swiper.activeIndex);
+  };
+
+  const swiperRef = useRef(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   return (
     <div className="max-w-screen-2xl mx-auto w-full 2xl:px-20">
       <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 text-center lg:text-left ">
@@ -55,13 +64,13 @@ export default function Feedback() {
       </h1>
 
       <Swiper
+        ref={swiperRef}
         breakpoints={{
           1: {
             slidesPerView: 1,
             spaceBetween: 40,
           },
         }}
-        loop={true}
         pagination={{
           el: ".custom-pagination",
           clickable: true,
@@ -72,6 +81,7 @@ export default function Feedback() {
         }}
         grabCursor={true}
         modules={[Pagination, FreeMode, Navigation]}
+        onSlideChange={handleSlideChange}
       >
         {feedbackData.map((item) => (
           <SwiperSlide key={item.title} className="mr-20">
@@ -93,13 +103,23 @@ export default function Feedback() {
                   {item.position}
                 </p>
                 <div className="flex gap-6 ml-1 justify-center lg:justify-normal">
-                  <div className="swiper-button-prev bg-primary p-2 rounded-full hover:opacity-50 cursor-pointer">
+                  <div
+                    className={`swiper-button-prev bg-primary p-2 rounded-full hover:opacity-50 cursor-pointer ${
+                      currentIndex === 0 ? "opacity-50" : ""
+                    }`}
+                  >
                     <RxArrowLeft
                       className=" block text-white rounded-xl text-3xl font-bold "
                       style={{ strokeWidth: 1 }}
                     />
                   </div>
-                  <div className="swiper-button-next bg-primary p-2 rounded-full hover:opacity-50 cursor-pointer">
+                  <div
+                    className={`swiper-button-next bg-primary p-2 rounded-full hover:opacity-50 cursor-pointer ${
+                      currentIndex === feedbackData.length - 1
+                        ? "opacity-50"
+                        : ""
+                    }`}
+                  >
                     <RxArrowRight
                       className=" block text-white rounded-xl text-3xl font-bold "
                       style={{ strokeWidth: 1 }}
