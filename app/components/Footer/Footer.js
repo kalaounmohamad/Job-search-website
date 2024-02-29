@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "../../img/logo.png";
+import Logo from "../../img/logo2.png";
 import Instagram from "../../img/instagram.png";
 import Facebook from "../../img/facebook.png";
 import X from "../../img/X.png";
@@ -9,39 +9,27 @@ export default function Footer() {
   return (
     <footer className="px-8 md:px-20 pt-60 py-20 bg-primary">
       <div className="max-w-screen-2xl mx-auto w-full 2xl:px-20">
-        {/* <div className="max-w-5xl mx-auto border-t-2 border-gray-200 py-5 sm:flex sm:flex-row sm:justify-between sm:items-center sm:flex-wrap grid grid-cols-2 grid-rows-2"> */}
-
-        <Link href="/">
-          <Image
-            src={Logo}
-            alt="Creoshift logo"
-            width={70}
-            loading="eager"
-            className="hover:opacity-75"
-          />
-        </Link>
-        <div className="footer-links m-3 flex flex-col sm:flex-row flex-wrap sm:space-x-4">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-        </div>
-        <div className="social-icons flex mt-4 gap-4 sm:mt-0">
-          <a href="https://www.facebook.com" target="_blank">
+        <div className="flex flex-col md:flex-row justify-between">
+          <Link href="/" className="w-auto">
             <Image
-              src={Facebook}
-              alt="Facebook Icon"
-              className="w-8 hover:opacity-75"
+              src={Logo}
+              alt="Jobnow logo"
+              width={150}
+              loading="eager"
+              className="hover:opacity-75"
             />
-          </a>
-          <a href="https://www.x.com" target="_blank">
-            <Image src={X} alt="X Icon" className="w-8 hover:opacity-75" />
-          </a>
-          <a href="https://www.instagram.com" target="_blank">
-            <Image
-              src={Instagram}
-              alt="Instagram Icon"
-              className="w-8 hover:opacity-75"
-            />
-          </a>
+          </Link>
+          <div className="flex flex-wrap gap-x-32">
+            <div className="flex flex-col text-white">
+              <h1>Company</h1>
+            </div>
+            <div className="flex flex-col text-white">
+              <h1>Pages</h1>
+            </div>
+            <div className="flex flex-col text-white">
+              <h1>Contact Us</h1>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

@@ -60,7 +60,7 @@ export default function Feedback() {
   return (
     <div className="max-w-screen-2xl mx-auto w-full 2xl:px-20">
       <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 text-center lg:text-left ">
-        Feedback about JobNow!
+        People&apos;s Feedback about JobNow!
       </h1>
 
       <Swiper
@@ -88,7 +88,7 @@ export default function Feedback() {
             <div class="grid  lg:grid-cols-[12fr,7fr] ">
               <div className="1 flex flex-col text-center lg:text-left gap-14 lg:pr-12">
                 <p className="text-gray-400 text-xl">{item.subtitle}</p>
-                <p className="font-medium text-xl sm:text-2xl mb-12">
+                <p className="font-medium text-lg sm:text-xl mb-12">
                   {item.feedback}
                 </p>
               </div>
