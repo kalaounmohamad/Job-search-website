@@ -35,10 +35,13 @@ export default function Footer() {
                 <p className=" text-wrap sm:text-nowrap">
                   Address: 123 Fifth Avenue, New York - 1060, USA
                 </p>
-                <Link href="#" className="hover:opacity-70">
+                <Link href="tel:+(1600)4567890" className="hover:opacity-70">
                   <p>Call Us: +(1600) 456 7890</p>
                 </Link>
-                <Link href="#" className="hover:opacity-70">
+                <Link
+                  href="mailto:yourid@example.com"
+                  className="hover:opacity-70"
+                >
                   <p>Email: yourid@example.com</p>
                 </Link>
                 <p>Mon Sat: 9:00 AM - 19:00 PM</p>
