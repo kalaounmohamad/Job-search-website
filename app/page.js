@@ -12,6 +12,7 @@ export default function Home() {
         <HowItWorks />
       </div>
       <div className="px-8 md:px-20 pt-20 bg-[#f7f7f7]">
+        {/* it was bg-[#f2f2f2] */}
         <JobCategories />
       </div>
       <div className="px-8 md:px-20 pt-28 bg-[#FBFBFB]">
