@@ -90,7 +90,7 @@ export default function Feedback() {
                 <p className="text-gray-400 text-base ">{item.subtitle}</p>
                 <p className="font-medium text-base">{item.feedback}</p>
               </div>
-              <div className="2 picture pt-20 pb-14 lg:pt-0 lg:pb-0 w-2/3 mx-auto lg:mx-0 lg:w-auto lg:row-span-2 lg:my-auto ">
+              <div className="2 picture pt-16 lg:pt-0 pb-14  lg:pb-0 w-full mx-auto lg:mx-0 lg:w-auto lg:row-span-2 lg:my-auto ">
                 <div className="bg-primary h-[350px] lg:h-[500px] rounded-3xl mx-auto">
                   <p className="text-center">{item.img}</p>
                 </div>
