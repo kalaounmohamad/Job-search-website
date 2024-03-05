@@ -4,7 +4,7 @@ import Cards from "./Cards";
 export default function LearnMore() {
   return (
     <>
-      <div className="flex flex-wrap justify-center md:justify-between  md:gap-7 pt-5">
+      <div className="flex flex-wrap justify-center md:justify-between  md:gap-3 pt-5">
         <p className="md:w-[60%] text-gray-400">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
           inventore nihil aspernatur placeat veniam officiis obcaecati laborum
