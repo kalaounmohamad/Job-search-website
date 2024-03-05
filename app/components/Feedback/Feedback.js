@@ -91,7 +91,7 @@ export default function Feedback() {
                 <p className="font-medium text-base">{item.feedback}</p>
               </div>
               <div className="2 picture pt-16 lg:pt-0 pb-14  lg:pb-0 w-full mx-auto lg:mx-0 lg:w-4/5 xl:w-[80%] lg:ml-auto lg:row-span-2 lg:my-auto ">
-                <div className="bg-primary h-[350px] lg:h-[500px] rounded-3xl mx-auto">
+                <div className="bg-primary h-[350px] lg:h-[420px] xl:h-[370px] rounded-3xl mx-auto">
                   <p className="text-center">{item.img}</p>
                 </div>
               </div>

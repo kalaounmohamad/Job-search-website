@@ -30,10 +30,10 @@ export default function Footer() {
 
           <div className="flex flex-wrap lg:flex-nowrap gap-x-12 md:gap-x-32">
             <div className="flex gap-x-12 md:gap-x-10">
-              <div className="company flex flex-col gap-1 text-white text-xs font-light ">
-                <h1 className="mb-1 text-xl">Company</h1>
-                <ul className="flex flex-col gap-1 w-4/5">
-                  <li className=" text-wrap ">
+              <div className="company flex flex-col gap-3 text-white text-xs font-light ">
+                <h1 className="text-xl">Company</h1>
+                <ul className="flex flex-col gap-2 w-4/5">
+                  <li className=" text-wrap leading-5">
                     Address: 123 Fifth Avenue, New York - 1060, USA
                   </li>
                   <li className="flex gap-1">
@@ -57,10 +57,13 @@ export default function Footer() {
                   <li>Mon Sat: 9:00 AM - 19:00 PM</li>
                 </ul>
               </div>
-              <div className="pages flex flex-col gap-1 text-white text-xs font-light">
+              <div className="pages flex flex-col gap-3 text-white text-xs font-light">
                 <h1 className="text-xl">Pages</h1>
                 <ul className="flex flex-col gap-1">
-                  <li href="#" className="hover:opacity-70">
+                  <li
+                    href="#"
+                    className="hover:opacity-70 hover:cursor-pointer"
+                  >
                     <p className="flex items-center">
                       <svg
                         viewBox="0 0 512 512"
@@ -72,7 +75,10 @@ export default function Footer() {
                     </p>
                   </li>
 
-                  <li href="#" className="hover:opacity-70">
+                  <li
+                    href="#"
+                    className="hover:opacity-70 hover:cursor-pointer"
+                  >
                     <p className="flex items-center">
                       <svg
                         viewBox="0 0 512 512"
@@ -84,7 +90,10 @@ export default function Footer() {
                     </p>
                   </li>
 
-                  <li href="#" className="hover:opacity-70">
+                  <li
+                    href="#"
+                    className="hover:opacity-70 hover:cursor-pointer"
+                  >
                     <p className="flex items-center">
                       <svg
                         viewBox="0 0 512 512"
@@ -96,7 +105,10 @@ export default function Footer() {
                     </p>
                   </li>
 
-                  <li href="#" className="hover:opacity-70">
+                  <li
+                    href="#"
+                    className="hover:opacity-70 hover:cursor-pointer"
+                  >
                     <p className="flex items-center">
                       <svg
                         viewBox="0 0 512 512"
@@ -108,7 +120,10 @@ export default function Footer() {
                     </p>
                   </li>
 
-                  <li href="#" className="hover:opacity-70">
+                  <li
+                    href="#"
+                    className="hover:opacity-70 hover:cursor-pointer"
+                  >
                     <p className="flex items-center">
                       <svg
                         viewBox="0 0 512 512"
@@ -120,7 +135,10 @@ export default function Footer() {
                     </p>
                   </li>
 
-                  <li href="#" className="hover:opacity-70">
+                  <li
+                    href="#"
+                    className="hover:opacity-70 hover:cursor-pointer"
+                  >
                     <p className="flex items-center">
                       <svg
                         viewBox="0 0 512 512"
