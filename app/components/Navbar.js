@@ -61,7 +61,7 @@ export default function Navbar() {
               className="md:flex  
              md:justify-between gap-4 lg:gap-8 xl:gap-12 space-y-4 md:space-y-0 font-semibold"
             >
-              <li>
+              <li className="hover:text-primary">
                 <Link
                   href="/"
                   onClick={closeMenu}
@@ -71,7 +71,7 @@ export default function Navbar() {
                 </Link>
               </li>
 
-              <li>
+              <li className="hover:text-primary">
                 <Link
                   href="/job"
                   onClick={closeMenu}
@@ -82,7 +82,7 @@ export default function Navbar() {
                   Job
                 </Link>
               </li>
-              <li>
+              <li className="hover:text-primary">
                 <Link
                   href="/aboutus"
                   onClick={closeMenu}
@@ -93,7 +93,7 @@ export default function Navbar() {
                   About Us
                 </Link>
               </li>
-              <li>
+              <li className="hover:text-primary">
                 <Link
                   href="/contact"
                   onClick={closeMenu}
@@ -145,7 +145,7 @@ export default function Navbar() {
               pathname === "/projects" ? "underline" : ""
             }`}
           >
-            Sign in
+            Sign In
           </Link>
           <Link
             href="/createaccount"
