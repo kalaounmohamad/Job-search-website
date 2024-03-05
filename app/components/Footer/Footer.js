@@ -12,7 +12,7 @@ export default function Footer() {
           <Overlay />
         </div>
         <div className="flex flex-col flex-wrap xl:flex-nowrap md:flex-row justify-between md:items-center">
-          <div className="logo w-4/5 lg:w-2/5 mb-16 xl:mb-0 md:pr-40">
+          <div className="logo w-full lg:w-2/5 mb-16 xl:mb-0 md:pr-40">
             <Link href="/" className="w-auto ">
               <Image
                 src={Logo}
