@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="relative px-8 md:px-20 pt-60 py-20 bg-primary">
       <div className="max-w-screen-2xl mx-auto w-full 2xl:px-20">
-        <div className="absolute top-[-150px] sm:top-[-120px] md:top-[-170px] w-[86%] max-w-screen-xl left-1/2 transform -translate-x-1/2 ">
+        <div className="absolute top-[-150px] sm:top-[-120px] md:top-[-170px] w-full max-w-screen-2xl left-1/2 transform -translate-x-1/2 ">
           <Overlay />
         </div>
         <div className="flex flex-col flex-wrap xl:flex-nowrap md:flex-row justify-between md:items-center">
