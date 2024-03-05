@@ -85,14 +85,10 @@ export default function Feedback() {
       >
         {feedbackData.map((item) => (
           <SwiperSlide key={item.title} className="mr-20">
-            <div class="grid  lg:grid-cols-[1fr,1fr] ">
+            <div class="grid  lg:grid-cols-[1.6fr,1fr] xl:grid-cols-[1.3fr,1fr] 2xl:grid-cols-[1.1fr,1fr] ">
               <div className="1 flex flex-col text-center lg:text-left gap-14 lg:pr-12">
-                <p className="text-gray-400 text-md sm:text-lg">
-                  {item.subtitle}
-                </p>
-                <p className="font-medium text-md sm:text-lg mb-12">
-                  {item.feedback}
-                </p>
+                <p className="text-gray-400 text-base ">{item.subtitle}</p>
+                <p className="font-medium text-base">{item.feedback}</p>
               </div>
               <div className="2 picture pt-20 pb-14 lg:pt-0 lg:pb-0 w-2/3 mx-auto lg:mx-0 lg:w-auto lg:row-span-2 lg:my-auto ">
                 <div className="bg-primary h-[350px] lg:h-[500px] rounded-3xl mx-auto">
@@ -100,14 +96,16 @@ export default function Feedback() {
                 </div>
               </div>
               <div className="3 lg:pr-12 text-center lg:text-left">
-                <p className="font-semibold text-2xl mb-2">{item.author}</p>
-                <p className="text-gray-500 text-md font-medium mb-6">
+                <p className="font-semibold text-lg mb-2">{item.author}</p>
+                <p className="text-gray-500 text-sm font-medium mb-6">
                   {item.position}
                 </p>
                 <div className="flex gap-6 ml-1 justify-center lg:justify-normal">
                   <div
-                    className={`swiper-button-prev bg-primary p-2 rounded-full hover:opacity-50 cursor-pointer ${
-                      currentIndex === 0 ? "opacity-50" : ""
+                    className={`swiper-button-prev  p-2 rounded-full hover:opacity-50 cursor-pointer ${
+                      currentIndex === 0
+                        ? "opacity-50 bg-gray-400"
+                        : "bg-primary"
                     }`}
                   >
                     <RxArrowLeft
@@ -116,10 +114,10 @@ export default function Feedback() {
                     />
                   </div>
                   <div
-                    className={`swiper-button-next bg-primary p-2 rounded-full hover:opacity-50 cursor-pointer ${
+                    className={`swiper-button-next  p-2 rounded-full hover:opacity-50 cursor-pointer ${
                       currentIndex === feedbackData.length - 1
-                        ? "opacity-50"
-                        : ""
+                        ? "opacity-50 bg-gray-400"
+                        : "bg-primary"
                     }`}
                   >
                     <RxArrowRight
