@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Help() {
   return (
-    <div className="flex flex-col gap-9 md:gap-16 md:flex-row md:items-center pt-12 pb-24 md:py-32 ">
+    <div className="flex flex-col gap-9 md:gap-16 md:flex-row md:items-center pt-12 pb-12 sm:py-32 ">
       <div className="md:w-[40%]">
         <div className="bg-gray-400 h-[340px] rounded-3xl mx-auto"></div>
       </div>
