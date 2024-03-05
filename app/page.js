@@ -11,7 +11,7 @@ export default function Home() {
       <div className="px-8 md:px-20 pt-20 bg-[#FBFBFB]">
         <HowItWorks />
       </div>
-      <div className="px-8 md:px-20 pt-20 bg-[#F2F2F2]">
+      <div className="px-8 md:px-20 pt-20 bg-[#f7f7f7]">
         <JobCategories />
       </div>
       <div className="px-8 md:px-20 pt-28 bg-[#FBFBFB]">
