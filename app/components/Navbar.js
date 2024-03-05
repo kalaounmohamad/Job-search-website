@@ -104,7 +104,7 @@ export default function Navbar() {
                   Contact
                 </Link>
               </li>
-              <li className="md:hidden">
+              <li className="md:hidden hover:text-primary">
                 <Link
                   href="/signin"
                   onClick={closeMenu}
@@ -115,7 +115,7 @@ export default function Navbar() {
                   Sign In
                 </Link>
               </li>
-              <li className="md:hidden">
+              <li className="md:hidden hover:opacity-70">
                 <Link
                   href="/createaccount"
                   onClick={closeMenu}
