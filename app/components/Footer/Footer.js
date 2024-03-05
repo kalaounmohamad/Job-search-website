@@ -13,13 +13,13 @@ export default function Footer() {
         </div>
         <div className="flex flex-col flex-wrap xl:flex-nowrap md:flex-row justify-between md:items-center">
           <div className="logo w-4/5 lg:w-2/5 mb-16 xl:mb-0 md:pr-40">
-            <Link href="/" className="w-auto">
+            <Link href="/" className="w-auto ">
               <Image
                 src={Logo}
                 alt="Jobnow logo"
                 width={250}
                 loading="eager"
-                className="hover:opacity-75"
+                className="hover:opacity-75 lg:w-[190px]"
               />
             </Link>
             <p className="text-white text-sm font-light mt-4 md:mt-8">
@@ -29,22 +29,24 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-wrap lg:flex-nowrap gap-x-12 md:gap-x-32">
-            <div className="flex gap-x-12 md:gap-x-16">
-              <div className="flex flex-col gap-1 text-white text-sm font-light">
+            <div className="flex gap-x-12 md:gap-x-10">
+              <div className="flex flex-col gap-1 text-white text-sm font-light ">
                 <h1 className="mb-1">Company</h1>
-                <p className=" text-wrap sm:text-nowrap">
-                  Address: 123 Fifth Avenue, New York - 1060, USA
-                </p>
-                <Link href="tel:+(1600)4567890" className="hover:opacity-70">
-                  <p>Call Us: +(1600) 456 7890</p>
-                </Link>
-                <Link
-                  href="mailto:yourid@example.com"
-                  className="hover:opacity-70"
-                >
-                  <p>Email: yourid@example.com</p>
-                </Link>
-                <p>Mon Sat: 9:00 AM - 19:00 PM</p>
+                <div className="flex flex-col gap-1 pr-10">
+                  <p className=" text-wrap ">
+                    Address: 123 Fifth Avenue, New York - 1060, USA
+                  </p>
+                  <Link href="tel:+(1600)4567890" className="hover:opacity-70">
+                    <p>Call Us: +(1600) 456 7890</p>
+                  </Link>
+                  <Link
+                    href="mailto:yourid@example.com"
+                    className="hover:opacity-70"
+                  >
+                    <p>Email: yourid@example.com</p>
+                  </Link>
+                  <p>Mon Sat: 9:00 AM - 19:00 PM</p>
+                </div>
               </div>
               <div className="flex flex-col gap-1 text-white text-sm font-light">
                 <h1 className="mb-1">Pages</h1>
