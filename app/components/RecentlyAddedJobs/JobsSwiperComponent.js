@@ -560,7 +560,7 @@ export default function JobsSwiperComponent() {
             <SwiperSlide key={index}>
               <div
                 key={index}
-                className="bg-white group rounded-3xl text-left pt-7 pl-6 pr-10 pb-4 h-full flex flex-col justify-between  "
+                className="bg-white group rounded-3xl text-left p-8 h-full flex flex-col justify-between  "
               >
                 {card.icon}
                 <h2 className="text-xl  font-semibold mb-4">{card.title}</h2>
@@ -604,7 +604,7 @@ export default function JobsSwiperComponent() {
                   </div>
                 </div>
                 <div className="flex ">
-                  <button className="flex items-center gap-3 text-[#00cc99] fill-[#00cc99] mb-7 group-hover:opacity-50 rounded-lg text-lg">
+                  <button className="flex items-center gap-2 text-[#00cc99] fill-[#00cc99] mb-3 group-hover:opacity-50 group-hover:gap-3 rounded-lg text-lg">
                     <p className="font-semibold ">Apply now</p>
                     <svg
                       stroke-width="0"
