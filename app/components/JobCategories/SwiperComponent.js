@@ -175,7 +175,7 @@ export default function SwiperComponent() {
             <SwiperSlide key={index}>
               <div
                 key={index}
-                className="bg-white rounded-3xl text-left pt-7 pl-6 pr-10 pb-4 h-full flex flex-col justify-between group hover:bg-[#00cc99] hover:text-white "
+                className="bg-white rounded-3xl text-left pt-7 pl-6 pr-10 pb-4 h-full flex flex-col justify-between group hover:bg-[#00cc99] hover:cursor-pointer hover:text-white "
               >
                 {card.icon}
                 <h2 className="text-xl  font-semibold mb-8">{card.title}</h2>
