@@ -6,7 +6,7 @@ import Overlay from "./Overlay";
 
 export default function Footer() {
   return (
-    <footer className="relative px-8 md:px-20 pt-60 py-20 bg-primary">
+    <footer className="relative px-8 md:px-20 pt-72 sm:pt-60 py-20 bg-primary">
       <div className="max-w-screen-2xl mx-auto w-full 2xl:px-20">
         <div className="absolute top-[-150px] sm:top-[-120px] md:top-[-170px] w-full max-w-screen-2xl left-1/2 transform -translate-x-1/2 ">
           <Overlay />
@@ -30,26 +30,36 @@ export default function Footer() {
 
           <div className="flex flex-wrap lg:flex-nowrap gap-x-12 md:gap-x-32">
             <div className="flex gap-x-12 md:gap-x-10">
-              <div className="flex flex-col gap-1 text-white text-sm font-light ">
-                <h1 className="mb-1">Company</h1>
+              <div className="flex flex-col gap-1 text-white text-xs font-light ">
+                <h1 className="mb-1 text-xl">Company</h1>
                 <div className="flex flex-col gap-1 pr-10">
                   <p className=" text-wrap ">
                     Address: 123 Fifth Avenue, New York - 1060, USA
                   </p>
-                  <Link href="tel:+(1600)4567890" className="hover:opacity-70">
-                    <p>Call Us: +(1600) 456 7890</p>
-                  </Link>
-                  <Link
-                    href="mailto:yourid@example.com"
-                    className="hover:opacity-70"
-                  >
-                    <p>Email: yourid@example.com</p>
-                  </Link>
+                  <div className="flex gap-1">
+                    <p>Call Us: </p>
+                    <Link
+                      href="tel:+(1600)4567890"
+                      className="hover:opacity-70"
+                    >
+                      <p> +(1600) 456 7890</p>
+                    </Link>
+                  </div>
+                  <div className="flex gap-1">
+                    <p>Email: </p>
+                    <Link
+                      href="mailto:yourid@example.com"
+                      className="hover:opacity-70"
+                    >
+                      <p>yourid@example.com</p>
+                    </Link>
+                  </div>
+
                   <p>Mon Sat: 9:00 AM - 19:00 PM</p>
                 </div>
               </div>
-              <div className="flex flex-col gap-1 text-white text-sm font-light">
-                <h1 className="mb-1">Pages</h1>
+              <div className="flex flex-col gap-1 text-white text-xs font-light">
+                <h1 className="text-xl">Pages</h1>
                 <Link href="#" className="hover:opacity-70">
                   <p className="flex items-center">
                     <svg

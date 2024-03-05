@@ -18,7 +18,7 @@ export default function Home() {
       <div className="px-8 md:px-20 pt-28 bg-[#FBFBFB]">
         <RecentlyAdded />
       </div>
-      <div className="px-8 md:px-20 pt-20 pb-80 bg-[#FBFBFB]">
+      <div className="px-8 md:px-20 pt-20 pb-52 md:pb-60 bg-[#FBFBFB]">
         <Feedback />
       </div>
     </>
