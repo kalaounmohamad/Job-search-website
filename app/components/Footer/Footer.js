@@ -22,7 +22,7 @@ export default function Footer() {
                 className="hover:opacity-75 lg:w-[190px]"
               />
             </Link>
-            <p className="text-white text-sm font-light mt-4 md:mt-8">
+            <p className="text-white text-xs font-light mt-4 md:mt-8">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
               dolores quaerat ipsa voluptatum quo?
             </p>
@@ -30,13 +30,13 @@ export default function Footer() {
 
           <div className="flex flex-wrap lg:flex-nowrap gap-x-12 md:gap-x-32">
             <div className="flex gap-x-12 md:gap-x-10">
-              <div className="flex flex-col gap-1 text-white text-xs font-light ">
+              <div className="company flex flex-col gap-1 text-white text-xs font-light ">
                 <h1 className="mb-1 text-xl">Company</h1>
-                <div className="flex flex-col gap-1 pr-10">
-                  <p className=" text-wrap ">
+                <ul className="flex flex-col gap-1 w-4/5">
+                  <li className=" text-wrap ">
                     Address: 123 Fifth Avenue, New York - 1060, USA
-                  </p>
-                  <div className="flex gap-1">
+                  </li>
+                  <li className="flex gap-1">
                     <p>Call Us: </p>
                     <Link
                       href="tel:+(1600)4567890"
@@ -44,8 +44,8 @@ export default function Footer() {
                     >
                       <p> +(1600) 456 7890</p>
                     </Link>
-                  </div>
-                  <div className="flex gap-1">
+                  </li>
+                  <li className="flex gap-1">
                     <p>Email: </p>
                     <Link
                       href="mailto:yourid@example.com"
@@ -53,84 +53,85 @@ export default function Footer() {
                     >
                       <p>yourid@example.com</p>
                     </Link>
-                  </div>
-
-                  <p>Mon Sat: 9:00 AM - 19:00 PM</p>
-                </div>
+                  </li>
+                  <li>Mon Sat: 9:00 AM - 19:00 PM</li>
+                </ul>
               </div>
-              <div className="flex flex-col gap-1 text-white text-xs font-light">
+              <div className="pages flex flex-col gap-1 text-white text-xs font-light">
                 <h1 className="text-xl">Pages</h1>
-                <Link href="#" className="hover:opacity-70">
-                  <p className="flex items-center">
-                    <svg
-                      viewBox="0 0 512 512"
-                      className="h-5 w-5 -ml-[5px] mr-1 fill-white "
-                    >
-                      <path d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"></path>
-                    </svg>
-                    Home
-                  </p>
-                </Link>
+                <ul className="flex flex-col gap-1">
+                  <li href="#" className="hover:opacity-70">
+                    <p className="flex items-center">
+                      <svg
+                        viewBox="0 0 512 512"
+                        className="h-5 w-5 -ml-[5px] mr-1 fill-white "
+                      >
+                        <path d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"></path>
+                      </svg>
+                      Home
+                    </p>
+                  </li>
 
-                <Link href="#" className="hover:opacity-70">
-                  <p className="flex items-center">
-                    <svg
-                      viewBox="0 0 512 512"
-                      className="h-5 w-5 -ml-[5px] mr-1 fill-white "
-                    >
-                      <path d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"></path>
-                    </svg>
-                    Booking
-                  </p>
-                </Link>
+                  <li href="#" className="hover:opacity-70">
+                    <p className="flex items-center">
+                      <svg
+                        viewBox="0 0 512 512"
+                        className="h-5 w-5 -ml-[5px] mr-1 fill-white "
+                      >
+                        <path d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"></path>
+                      </svg>
+                      Booking
+                    </p>
+                  </li>
 
-                <Link href="#" className="hover:opacity-70">
-                  <p className="flex items-center">
-                    <svg
-                      viewBox="0 0 512 512"
-                      className="h-5 w-5 -ml-[5px] mr-1 fill-white "
-                    >
-                      <path d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"></path>
-                    </svg>
-                    Facilities
-                  </p>
-                </Link>
+                  <li href="#" className="hover:opacity-70">
+                    <p className="flex items-center">
+                      <svg
+                        viewBox="0 0 512 512"
+                        className="h-5 w-5 -ml-[5px] mr-1 fill-white "
+                      >
+                        <path d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"></path>
+                      </svg>
+                      Facilities
+                    </p>
+                  </li>
 
-                <Link href="#" className="hover:opacity-70">
-                  <p className="flex items-center">
-                    <svg
-                      viewBox="0 0 512 512"
-                      className="h-5 w-5 -ml-[5px] mr-1 fill-white "
-                    >
-                      <path d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"></path>
-                    </svg>
-                    About Us
-                  </p>
-                </Link>
+                  <li href="#" className="hover:opacity-70">
+                    <p className="flex items-center">
+                      <svg
+                        viewBox="0 0 512 512"
+                        className="h-5 w-5 -ml-[5px] mr-1 fill-white "
+                      >
+                        <path d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"></path>
+                      </svg>
+                      About Us
+                    </p>
+                  </li>
 
-                <Link href="#" className="hover:opacity-70">
-                  <p className="flex items-center">
-                    <svg
-                      viewBox="0 0 512 512"
-                      className="h-5 w-5 -ml-[5px] mr-1 fill-white "
-                    >
-                      <path d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"></path>
-                    </svg>
-                    Location
-                  </p>
-                </Link>
+                  <li href="#" className="hover:opacity-70">
+                    <p className="flex items-center">
+                      <svg
+                        viewBox="0 0 512 512"
+                        className="h-5 w-5 -ml-[5px] mr-1 fill-white "
+                      >
+                        <path d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"></path>
+                      </svg>
+                      Location
+                    </p>
+                  </li>
 
-                <Link href="#" className="hover:opacity-70">
-                  <p className="flex items-center">
-                    <svg
-                      viewBox="0 0 512 512"
-                      className="h-5 w-5 -ml-[5px] mr-1 fill-white "
-                    >
-                      <path d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"></path>
-                    </svg>
-                    Contact
-                  </p>
-                </Link>
+                  <li href="#" className="hover:opacity-70">
+                    <p className="flex items-center">
+                      <svg
+                        viewBox="0 0 512 512"
+                        className="h-5 w-5 -ml-[5px] mr-1 fill-white "
+                      >
+                        <path d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"></path>
+                      </svg>
+                      Contact
+                    </p>
+                  </li>
+                </ul>
               </div>
             </div>
             <div className="flex flex-col text-white">

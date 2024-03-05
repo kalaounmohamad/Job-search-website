@@ -85,12 +85,12 @@ export default function Feedback() {
       >
         {feedbackData.map((item) => (
           <SwiperSlide key={item.title} className="mr-20">
-            <div class="grid  lg:grid-cols-[1.6fr,1fr] xl:grid-cols-[1.3fr,1fr] 2xl:grid-cols-[1.1fr,1fr] ">
+            <div class="grid  lg:grid-cols-[1fr,1fr]  ">
               <div className="1 flex flex-col text-center lg:text-left gap-14 lg:pr-12">
                 <p className="text-gray-400 text-base ">{item.subtitle}</p>
                 <p className="font-medium text-base">{item.feedback}</p>
               </div>
-              <div className="2 picture pt-16 lg:pt-0 pb-14  lg:pb-0 w-full mx-auto lg:mx-0 lg:w-auto lg:row-span-2 lg:my-auto ">
+              <div className="2 picture pt-16 lg:pt-0 pb-14  lg:pb-0 w-full mx-auto lg:mx-0 lg:w-4/5 xl:w-[80%] lg:ml-auto lg:row-span-2 lg:my-auto ">
                 <div className="bg-primary h-[350px] lg:h-[500px] rounded-3xl mx-auto">
                   <p className="text-center">{item.img}</p>
                 </div>
